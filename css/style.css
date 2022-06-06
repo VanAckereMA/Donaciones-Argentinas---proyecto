@@ -37,23 +37,44 @@ body {
     font-style: normal;
 }
 
-header .navegador nav{
-    width: 100%;
-    height: 250px;
-    margin:0px;
-    background-color: #000000;
+/* Contenedor del logo*/
+.logo-conteiner {
+    display: flex;
+    flex-direction: column;
 }
 
+/* para anchicar la imgane del logo*/
+.logo-conteiner a img {
+    height: 70px;
+    padding-left: 50px;
+}
+/* Sacar las decoraciones del link del logo */
+.logo-conteiner a {
+    text-decoration: none;
+    color: var(--amarilloF);
+    font-size: 16px;
+}
 .navegador {
-    margin: 30px auto;
-    background: var(--negro) ;
+    background: var(--negro);
+    height: 120px; /*alto del navegador*/
 }
 
+/* Espacio entre los elementos en la barra de navegacion*/
+.navegador {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
 .navegador > ul {
+    width: 70%; /* Le puse un ancho a las listas para que ocupen el 70%*/
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    margin: 0px;
+}
+/* boton de sign-up*/
+.navegador li:nth-child(5) {
+    position: absolute;
+    top: 0px; right: 0px;
 }
 
 .menu > li {
