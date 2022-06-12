@@ -8,14 +8,11 @@ window.addEventListener("scroll", function(){
     /******         Bucle para generalizar         ******/
     for (var i = 0; i < lupa.length; i++){
 
-
-
         /******         Altura de pantalla         ******/
         var altura = window.innerHeight; 
 
         /******    Pantalla al 50% ----> 1314    ******/
         /******    Pantalla al 100% ----> 657    ******/
-
 
 
         /******         Distancia de pantalla         ******/

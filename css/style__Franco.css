@@ -12,13 +12,11 @@
     --amarilloF: #EEC04B;
     --amarilloC: #EEE8A9;
 
-    /******         Fuentes          ******/
 
-    /*
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    */
+    /******         Fuentes          ******/
+    --font_mont: 'Montserrat', sans-serif;
+    --font_popi: 'Poppins', sans-serif;
+    --font_robo: 'Roboto', sans-serif;
 }
 
 
@@ -27,27 +25,19 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
 }
 
 
 body {
     background-color:rgb(205, 231, 235) ;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
 }
 
-
-header .navegador nav{
-    width: 100%;
-    height: 250px;
-    margin:0px;
-    background-color: #000000;
-}
-
-
 .navegador {
-    margin: 30px auto;
+    padding: 40px;
     background: var(--negro) ;
 }
 
@@ -70,8 +60,6 @@ header .navegador nav{
     display: block;
     padding: 15px 20px;
     color: var(--amarilloF);
-    font-family: sans-serif;
-    text-decoration: none;
 }
 
 
@@ -86,14 +74,21 @@ h2 {
 }
 
 
+/******         Logo y Login         ******/
+.logo, .sesion{
+    color: var(--celeste);
+}
+
+
 /******         Submenu         ******/
 .submenu {
     position: absolute;
-    background: var(--azul);
+    background: var(--negro);
     width: 100%;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
+    text-align: center;
 }
 
 
@@ -101,8 +96,6 @@ h2 {
     display: block;
     padding: 15px;
     color: var(--naranja);
-    font-family: sans-serif;
-    text-decoration: none;
 }
 
 
@@ -115,11 +108,10 @@ h2 {
 /******         banner         ******/
 .banner {
     width: 100%;
-    height: 570px;
+    height: 900px;
     background-image: url(https://images.unsplash.com/photo-1526168637801-e9f490d6bc04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80);
     background-size: cover;
     margin-top: 0px;
-    background-color: #FF8E25;
 }
 
 
@@ -131,7 +123,7 @@ h2 {
 
 /******         Posicion de Buscador         ******/
 .search {
-    height: 50%;
+    height: 100%;
     max-height: 100%;
     display: flex;
     justify-content: center;
@@ -142,12 +134,13 @@ h2 {
 
 
 .search input {
-    width: 700px;
+    width: 900px;
     height: 100px;
     border-radius: 100px;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid var(--negro);
     opacity:0.4;
     font-size: 50px;
+    padding: 0px 0px 0px 50px;
 }
 
 
@@ -157,6 +150,12 @@ h2 {
     width: 100px;;
     border-radius: 50%;
     font-size: 50px;
+    background-color: var(--amarilloF);
+}
+
+.search button:hover {
+    background-color: var(--celeste);
+    cursor: pointer;
 }
 
 
@@ -165,7 +164,7 @@ h2 {
 .transform_arriba{transform: translateY(20%)}
 .transform_abajo{transform: translateY(20%)}
 .transform_derecha{transform: translateX(20%)}
-.transform_izquierda{transform: translateX(-72%)}
+.transform_izquierda{transform: translateX(-79.2%)}
 
 
 /******         Efectos         ******/
@@ -190,7 +189,7 @@ h2 {
     justify-content: center;
     border: solid 1px black;
     width: 600px;
-    padding: 10px 0;
+    padding: 0px 0px 40px;
     background-color: var(--naranja);
     border-radius: 70px;
 }
@@ -230,11 +229,11 @@ h2 {
 
 
 .news .title {
-    margin: 70px 0;
+    margin: 0px 0px 70px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 6px rgb(29, 28, 26);
+    text-shadow: 2px 2px 6px rgb(29, 29, 26);
     border-top: 1px solid white;
 }
 
