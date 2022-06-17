@@ -322,3 +322,64 @@ div .news-list{
     text-align: center;
     padding: 2px;
 }
+
+
+/*FOOTER*/
+
+#footer {
+
+    background-color: var(--azul);
+    color: wheat;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer .logo {
+    display: flex;
+    justify-content: center;
+}
+
+footer .logo > img {
+    
+    width: 200px;
+}
+
+footer .container {
+
+    padding: 0 10px;
+    height: 200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+footer .social-media { 
+
+   display: flex;
+   align-items: flex-end;
+}
+
+footer .social-media a {
+    
+    display: flex;
+    align-items: flex-end;
+    padding: 0; 
+}
+
+footer .social-media a > img {
+    
+    width: 65px;
+
+    
+}
+
+footer .social-media a:nth-child(2) > img {
+    
+    width: 72px;
+}
