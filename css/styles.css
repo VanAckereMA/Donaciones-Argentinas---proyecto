@@ -121,3 +121,25 @@ div .news-list{
     text-align: center;
     padding: 2px;
 }
+
+@keyframes movimiento {
+    0%{
+
+    }
+
+    25%{
+
+    }
+    
+    50%{
+
+    }
+
+    75%{
+
+    }
+
+    100%{
+        
+    }
+}
