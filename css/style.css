@@ -348,6 +348,7 @@ div .news-list{
 
 #footer {
 
+    margin-top: 70px;
     background-color: var(--azul);
     color: wheat;
     height: 400px;
@@ -402,4 +403,73 @@ footer .social-media a > img {
 footer .social-media a:nth-child(2) > img {
     
     width: 72px;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*CATEGORIES*/
+
+#category-title {
+
+    margin: 70px 0 45px;
+    text-align: center;
+    
+}
+
+.category-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-container section {
+    width: 70%;
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 15px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.category-container section a {
+    width: 100%;
+    height: 200px;
+    padding: 100px;
+    text-decoration: none;
+    color: black;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#goods {
+    background-image: url(/img/bienes_1.jpg);
+}
+
+#health {
+    background-image: url(/img/salud_1.jpg);
+}
+
+#social {
+    background-image: url(/img/social_1.jpg);
+    background-position: center;
+}
+
+#nature {
+    background-image: url(/img/ambiental_1.jpg);
+    background-position: center;
+}
+
+#goods img {
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+#goods h2 {
+    z-index: 2;
 }
