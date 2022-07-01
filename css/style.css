@@ -408,6 +408,7 @@ footer .social-media a:nth-child(2) > img {
 
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------*/
+
 /*CATEGORIES*/
 
 #category-title {
@@ -429,8 +430,7 @@ footer .social-media a:nth-child(2) > img {
     margin: 20px 0;
     border-radius: 15px;
     
-    display: flex;
-    align-items: center;
+    
 }
 
 .category-container section a {
@@ -464,12 +464,40 @@ footer .social-media a:nth-child(2) > img {
     background-position: center;
 }
 
-#goods img {
-    width: 300px;
-    position: absolute;
-    z-index: 1;
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*DONATIONS*/
+
+.form-container {
+    display: flex;
+    justify-content: center;
 }
 
-#goods h2 {
-    z-index: 2;
+form {
+    width: 80%;
+    
+    margin-top: 60px;
+    border: solid 1px black;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.donations-title {
+    width: 60%;
+   
+}
+
+.donations-title input {
+    border: none;
+    border-bottom: solid 1px black;
+    width: 100%;
+    
 }
