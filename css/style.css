@@ -180,59 +180,50 @@ h2 {
 
 /* ----------- CAMPANAS ----------- */
 
-
 .campaigns {
 
     margin-top: 90px;
     
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    
-
 }
 
 .campaigns .title {
-    display: flex;
-    justify-content: center;
-    border: solid 1px black;
+
+    margin-bottom: 90px;
     width: 600px;
     padding: 10px 0;
-    background-color: var(--naranja);
-    border-radius: 70px;
+    border-radius: 90px;
+    background-color: var(--negro);
+    color: var(--amarilloF);
+
+    display: flex;
+    justify-content: center;
 }
-
-
-.campaigns a img {
-    
-    height: 200px;
-    border-radius: 20px;
-    border: solid 2px rgba(0, 0, 0, 0.068);
-}
-
 
 .campaigns .campaign-container {
     
+    margin-bottom: 80px;
+    width: 95%;
+   
     display: flex;
-    justify-content: space-evenly;
-    
-    
-    
-    margin-top: 30px;
-    margin-bottom: 20px;
-    width: 90%;
-      
+    justify-content: space-evenly; 
 }
 
-.image {
+.campaigns a img {
     
-    height: 200px;
+    width: 220px;
+    height: 270px;
+    border-radius: 24px;
 
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 2px 13px 24px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 13px 24px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 13px 24px 3px rgba(0,0,0,0.75);
+}
+
+.campaigns a:hover img {
+    outline: solid 5px var(--azul);
 }
 
 
@@ -252,14 +243,6 @@ h2 {
     border-top: 1px solid white;
     
     
-}
-
-.title h2{
-    text-align: center;
-    padding-top: 50px;
-    
-
-
 }
 
 div .news-list{
@@ -359,4 +342,64 @@ div .news-list{
     font-size: 0.77em;
     text-align: center;
     padding: 2px;
+}
+
+/*FOOTER*/
+
+#footer {
+
+    background-color: var(--azul);
+    color: wheat;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer .logo {
+    display: flex;
+    justify-content: center;
+}
+
+footer .logo > img {
+    
+    width: 200px;
+}
+
+footer .container {
+
+    padding: 0 10px;
+    height: 200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+footer .social-media { 
+
+   display: flex;
+   align-items: flex-end;
+}
+
+footer .social-media a {
+    
+    display: flex;
+    align-items: flex-end;
+    padding: 0; 
+}
+
+footer .social-media a > img {
+    
+    width: 65px;
+
+    
+}
+
+footer .social-media a:nth-child(2) > img {
+    
+    width: 72px;
 }
