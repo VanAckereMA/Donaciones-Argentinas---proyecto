@@ -412,25 +412,23 @@ footer .social-media a:nth-child(2) > img {
 /*CATEGORIES*/
 
 #category-title {
-
     margin: 70px 0 45px;
     text-align: center;
-    
 }
 
 .category-container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .category-container section {
-    width: 70%;
+    width: 55%;
     height: 200px;
     margin: 20px 0;
     border-radius: 15px;
-    
-    
 }
 
 .category-container section a {
@@ -445,24 +443,45 @@ footer .social-media a:nth-child(2) > img {
     align-items: center;
 }
 
+.category-container section a h2 {
+    /*min-width: 30%;
+    padding: 20px;
+    
+    border-radius: 24px;
+
+    background-color: white; */
+    color: white;
+}
+
+#goods,
+#health,
+#social,
+#environmental { 
+    background-position: center;
+    background-size: cover;
+    
+}
 
 #goods {
-    background-image: url(/img/bienes_1.jpg);
+    background-image: linear-gradient(to right, #cf3384be, #da437f80, #e3537c62, #ea63773d, #ef737715), url(/img/bienes_1.jpg);
+    
 }
 
 #health {
-    background-image: url(/img/salud_1.jpg);
+    background-image: linear-gradient(to right, #cf3384be, #da437f80, #e3537c62, #ea63773d, #ef737715), url(/img/salud_1.jpg);
+    background-position-y: -60px;
 }
 
 #social {
-    background-image: url(/img/social_1.jpg);
-    background-position: center;
+    background-image: linear-gradient(to right, #cf3384be, #da437f80, #e3537c62, #ea63773d, #ef737715), url(/img/social_1.jpg);
+
 }
 
-#nature {
-    background-image: url(/img/ambiental_1.jpg);
-    background-position: center;
+#environmental {
+    background-image: linear-gradient(to right, #cf3384be, #da437f80, #e3537c62, #ea63773d, #ef737715), url(/img/ambiental_2.jpg);
 }
+
+
 
 
 
@@ -540,8 +559,7 @@ form section label {
     padding-bottom: 5px;
     
     border: none;
-    border-bottom: solid 1px rgb(180, 180, 180);
-    
+    border-bottom: solid 1px rgb(180, 180, 180);  
 }
 
 .donations-title input:focus {
@@ -608,7 +626,6 @@ form section {
 
     display: flex;
     justify-content: center;
-
 }
 
 form section label {
