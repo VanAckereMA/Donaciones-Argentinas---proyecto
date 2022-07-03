@@ -7,7 +7,7 @@
     <title>DonArg | Donaciones</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 </head>
 <body>
@@ -46,80 +46,74 @@
     </header>
 
     <main>
-        <div class="form-container">
-            <form>      
-                <label class="donations-title">
-                    Título
+        <div id="big-container">
+            <div class="form-container">
+                <form> 
+                    <h2>Donaciones</h2>     
+                    <label class="donations-title">
+                        TÍTULO *
+                        <br>
+                        <input type="text" name="title" required>
+                    </label>
                     <br>
-                    <input type="text" name="title" placeholder="Ingrese un título" required>
-                </label>
-                <br>
-                <label class="donations-description">
-                    Descripción
+                    <label class="donations-description">
+                        DESCRIPCIÓN *
+                        <br>
+                        <br>
+                        <textarea name="description" id="" cols="30" rows="10" required></textarea>
+                    </label>
                     <br>
-                    <textarea name="description" id="" cols="30" rows="10"></textarea>
-                </label>
-                <br>
-                <label class="donations-category">
-                    Categorias
+                    <label class="donations-category">
+                        CATEGORÍAS *
+                        <select name="dbType" id="dbType" required>
+                            <option value="" selected disabled hidden>Elija una opción</option>
+                            <option value="bienes">Bienes</option>
+                            <option value="salud">Salud</option>
+                            <option value="social">Social</option>
+                            <option value="ambiental">Ambiental</opton>
+                        </select>
+                    </label>
+                    <section>
+                        <label id="bienesType" style="display:none;">
+                            <span><input type="radio" name="type"> Electrónicos</span>
+                            <span><input type="radio" name="type"> Muebles</span>
+                            <span><input type="radio" name="type"> Colab. Económica</span>
+                            <span><input type="radio" name="type"> Otros</span>
+                        </label>
+                        <label id="saludType" style="display:none;">
+                            <span><input type="radio" name="type">Medicamentos</span>
+                            <span><input type="radio" name="type"> Sangre </span>
+                            <span><input type="radio" name="type"> Organos</span>
+                            <span><input type="radio" name="type"> Colab. Económica</span>
+                            <span><input type="radio" name="type"> Otros</span>
+                        </label>
+                        <label id="socialType" style="display:none;">
+                            <span><input type="radio" name="type">Ropa</span>
+                            <span><input type="radio" name="type">Alimentos</span>
+                            <span><input type="radio" name="type"> Colab. Económica</span>
+                            <span><input type="radio" name="type"> Otros</span> 
+                        </label>
+                        <label id="ambientalType" style="display:none;">
+                            <span><input type="radio" name="type"> Electrónicos</span>
+                            <span><input type="radio" name="type"> Muebles</span>
+                            <span> <input type="radio" name="type"> Colab. Económica</span>
+                            <span><input type="radio" name="type"> Otros</span>
+                        </label>
+                    </section>
+                    <label class="donations-attach">
+                        ADJUNTAR IMAGEN *
+                        <input type="file" required>
+                    </label>
+                    
                     <br>
-                    <select name="dbType" id="dbType">
-                        <option value="" selected disabled hidden>Elija una opción</option>
-                        <option value="bienes">Bienes</option>
-                        <option value="salud">Salud</option>
-                        <option value="social">Social</option>
-                        <option value="ambiental">Ambiental</opton>
-                    </select>
-                </label>
-                <br>
-                <label id="bienesType" style="display:none;">
-                    Tipo :
-                    <br>
-                    <input type="radio" name="type"> Electrónicos
-                    <input type="radio" name="type"> Muebles
-                    <input type="radio" name="type"> Colab. Económica
-                    <input type="radio" name="type"> Otros
-                </label>
-                <label id="saludType" style="display:none;">
-                    Tipo :
-                    <br>
-                    <input type="radio" name="type">Medicamentos 
-                    <input type="radio" name="type"> Sangre 
-                    <input type="radio" name="type"> Organos 
-                    <input type="radio" name="type"> Colab. Económica 
-                    <input type="radio" name="type"> Otros
-                </label>
-                <label id="socialType" style="display:none;">
-                    Tipo :
-                    <br>
-                    <input type="radio" name="type">Ropa
-                    <input type="radio" name="type">Alimentos
-                    <input type="radio" name="type"> Colab. Económica
-                    <input type="radio" name="type"> Otros
-                </label>
-                <label id="ambientalType" style="display:none;">
-                    Tipo :
-                    <br>
-                    <input type="radio" name="type"> Electrónicos
-                    <input type="radio" name="type"> Muebles
-                    <input type="radio" name="type"> Colab. Económica
-                    <input type="radio" name="type"> Otros
-                </label>
-                <br>
-                <label>
-                    Adjuntar Imagen
-                    <br>
-                    <input type="file">
-                </label>
-                <br>
-                <button>Enviar</button>
-            </form>
+                    <div id="button-don-container">
+                        <button>Enviar Donación</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        
-    
     </main>
     <footer>
-        
     </footer>
 
     <script>

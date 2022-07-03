@@ -471,33 +471,147 @@ footer .social-media a:nth-child(2) > img {
 
 /*DONATIONS*/
 
+#big-container {
+    display: flex;
+    justify-content: center;
+}
+
 .form-container {
+    margin: 60px 0;
+    width: 90%;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6), url(../img/kids_smiling.png);
+    -webkit-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
+
     display: flex;
     justify-content: center;
 }
 
 form {
-    width: 80%;
-    
-    margin-top: 60px;
-    border: solid 1px black;
+    width: 80%;  
+    margin: 120px 0;
+    padding: 100px 0;
+
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
 
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 }
 
-.donations-title {
-    width: 60%;
-   
+.form-container h2 {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.donations-title,
+.donations-description,
+.donations-category,
+.donations-attach,
+#button-don-container,
+form section label {
+    width: 80%;
+    margin: 20px 0;
+    color: rgb(114, 111, 111);
+    font-size: 15px;
+}
+
+.donations-category,
+.donations-attach,
+#button-don-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .donations-title input {
-    border: none;
-    border-bottom: solid 1px black;
     width: 100%;
+    padding-left: 5px;
+    padding-bottom: 5px;
     
+    border: none;
+    border-bottom: solid 1px rgb(180, 180, 180);
+    
+}
+
+.donations-title input:focus {
+    outline: none;
+
+    border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
+    border-width: 2px;
+    border-image-slice: 1;
+}
+
+.donations-description textarea{
+    width: 100%;
+    padding: 10px;
+
+    border: solid 1px rgb(180, 180, 180);
+}
+
+.donations-description textarea:focus {
+    outline: none;
+    
+    border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
+    border-width: 2px;
+    border-image-slice: 1;
+}
+
+.donations-category select {
+    margin-left: 20px;
+    padding: 8px;
+    text-align: center;
+    appearance: none;
+
+    border: none;
+    border-bottom: solid 1px rgb(180, 180, 180);
+    box-shadow: 0 4px 2px -2px rgba(107, 106, 106, 0.342);
+}
+
+.donations-category select:focus {
+    outline: none;
+
+    border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
+    border-width: 2px;
+    border-image-slice: 1;
+}
+
+.donations-attach input {
+    margin-left: 20px;
+    padding: 8px;
+    text-align: center;
+    appearance: none;
+}
+
+#button-don-container button {
+    all: unset;
+    cursor: pointer;
+
+    padding: 10px 50px;
+    font-size: 17px;
+    color: white;
+    background-image: linear-gradient(to right, #cf3384, #da437f, #e3537c, #ea6377, #ef7377);
+}
+
+form section {
+    width: 60%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+form section label {
+    display: flex;
+    justify-content: space-evenly;
 }
