@@ -647,7 +647,7 @@ form section label {
 
 #sign-container {
     background-color: #08394E;
-    height: 90vh;
+    height: 100vh;
     width: 70%;
     background-image: linear-gradient(to right, #08394eb6, #da437f49, #ff8e259c, #ff8e2577), url(../img/login-img.avif);
     background-repeat: no-repeat;
@@ -661,8 +661,10 @@ form section label {
 
 }
 
-sign-container form {
+#sign-container form {
     height: 90%;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -674,4 +676,12 @@ sign-container form {
     font-size: 17px;
     color: white;
     background-image: linear-gradient(to right, #08394eb6, #da437f49, #FF8E25, #ff8e25c5);
+    margin-bottom: 30px;
+}
+.registrar a {
+    text-decoration: none;
+    color:  #ff8e25;
+}
+.registrar a:hover {
+    color: #08394E;
 }
