@@ -632,3 +632,46 @@ form section label {
     display: flex;
     justify-content: space-evenly;
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*LOG IN*/
+
+#sign-up {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-container {
+    background-color: #08394E;
+    height: 90vh;
+    width: 70%;
+    background-image: linear-gradient(to right, #08394eb6, #da437f49, #ff8e259c, #ff8e2577), url(../img/login-img.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0px 8px 32px 0px rgb(0 0 0 / 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+sign-container form {
+    height: 90%;
+
+}
+
+#login button {
+    all: unset;
+    cursor: pointer;
+
+    padding: 10px 50px;
+    font-size: 17px;
+    color: white;
+    background-image: linear-gradient(to right, #08394eb6, #da437f49, #FF8E25, #ff8e25c5);
+}
