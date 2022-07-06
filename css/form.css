@@ -1,15 +1,4 @@
 
-:root {
-
-    /******         Paleta de Colores         ******/
-    --negro: #000000;
-    --azul: #08394E;
-    --celeste: #7EC6D6;
-    --naranja: #FF8E25;
-    --amarilloF: #EEC04B;
-    --amarilloC: #EEE8A9;
-
-}
 
 /******         Login           ******/
 
@@ -34,6 +23,7 @@
 
     display: flex;
     justify-content: center;
+    background: url(..css/img/imagens);
 }
 
 form {
@@ -124,17 +114,5 @@ form section label {
     font-size: 17px;
     color: white;
     background-image: linear-gradient(to right, #cf3384, #da437f, #e3537c, #ea6377, #ef7377);
-}
-
-form section {
-    width: 60%;
-
-    display: flex;
-    justify-content: center;
-}
-
-form section label {
-    display: flex;
-    justify-content: space-evenly;
 }
 
