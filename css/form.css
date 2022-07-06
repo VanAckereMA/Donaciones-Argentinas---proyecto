@@ -11,70 +11,14 @@
 
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-
-.imagen-background {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-}
-
-.filter {
-    background: var(--azul);
-    position: absolute;
-    opacity: 0.7;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    
-}
-
-.box_formulary {
-    margin-top: 8%;
-    margin-left: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--azul);
-    position: absolute;
-    width: 350px;
-    height: 450px;
-    z-index: 2;
-}
-
-
-.formulary{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-h2 {
-    padding: 10%;
-    justify-content: left;
-    color: #ffffff;
-    font-size: 2rem;
-}
-
-input, button {
-    font-size: 20px;
-    margin:10px;
-}
-
-/*************************************************************************************************************************************************************************************************/
-
-/*DONATIONS*/
+/******         Login           ******/
 
 #big-container {
     display: flex;
     justify-content: center;
 }
+
+
 
 .form-container {
     margin: 60px 0;
@@ -112,13 +56,11 @@ form {
 .form-container h2 {
     width: 80%;
     margin-bottom: 30px;
+    font-size: 2.5rem;
 }
 
-.donations-title,
-.donations-description,
-.donations-category,
-.donations-attach,
-#button-don-container,
+.input-title,
+#button-form-container,
 form section label {
     width: 80%;
     margin: 20px 0;
@@ -126,15 +68,13 @@ form section label {
     font-size: 15px;
 }
 
-.donations-category,
-.donations-attach,
-#button-don-container {
+#button-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.donations-title input {
+.input-title input {
     width: 100%;
     padding-left: 5px;
     padding-bottom: 5px;
@@ -143,7 +83,7 @@ form section label {
     border-bottom: solid 1px rgb(180, 180, 180);  
 }
 
-.donations-title input:focus {
+.input-title input:focus {
     outline: none;
 
     border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
@@ -151,48 +91,32 @@ form section label {
     border-image-slice: 1;
 }
 
-.donations-description textarea{
-    width: 100%;
-    padding: 10px;
-
-    border: solid 1px rgb(180, 180, 180);
+#link {
+    margin: 2% 5% 0% 0%;
+    width: 40%;
 }
 
-.donations-description textarea:focus {
-    outline: none;
-    
-    border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
-    border-width: 2px;
-    border-image-slice: 1;
+#link a{
+    color: rgb(114, 111, 111);
+    padding: 0% 0% 5% 30%;
+    display: flex;
+    display: inline-block;
 }
 
-.donations-category select {
-    margin-left: 20px;
-    padding: 8px;
-    text-align: center;
-    appearance: none;
-
-    border: none;
-    border-bottom: solid 1px rgb(180, 180, 180);
-    box-shadow: 0 4px 2px -2px rgba(107, 106, 106, 0.342);
+#link .olvcontra {
+    padding: 0% 0% 0% 50%;
 }
 
-.donations-category select:focus {
-    outline: none;
-
-    border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
-    border-width: 2px;
-    border-image-slice: 1;
+.not-count {
+    font-size: 2rem;
 }
 
-.donations-attach input {
-    margin-left: 20px;
-    padding: 8px;
-    text-align: center;
-    appearance: none;
+.not-count, #button-form-container  {
+    flex-direction: column;
 }
 
-#button-don-container button {
+
+#button-form-container button {
     all: unset;
     cursor: pointer;
 
@@ -213,3 +137,4 @@ form section label {
     display: flex;
     justify-content: space-evenly;
 }
+
