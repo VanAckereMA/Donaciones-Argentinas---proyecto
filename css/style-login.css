@@ -7,7 +7,14 @@
     justify-content: center;
 }
 
-
+.banner-login {
+    width: 100%;
+    height: 100%;
+    overflow: cover;
+    position: absolute;
+    z-index: 0;
+    opacity:0.2;
+}
 
 .form-container {
     margin: 60px 0;
@@ -23,7 +30,8 @@
 
     display: flex;
     justify-content: center;
-    background: url(..css/img/imagens);
+    position: relative;
+    z-index: 1;
 }
 
 form {
@@ -41,6 +49,7 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .form-container h2 {
