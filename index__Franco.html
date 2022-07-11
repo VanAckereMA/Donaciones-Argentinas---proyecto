@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donaciones Argentina</title>
+    <title>Donaciones Argentinas | DonArg</title>
+
     <link rel="stylesheet" href="css/style-franco.css">
-    <script src="js/animation.js"></script>
+    <link rel="shortcut icon" href="img/png-transparent-logo-community-text-logo-television-show.png">
+
+    
     <script src="https://kit.fontawesome.com/683b2a5299.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
+
     <header> <!--Seccion del Header (Logo - Barra de menu - Boton para registrarse e iniciar sesion)-->
 
         
         <nav class="navegador">
             <ul class="menu">
-
+                
                 <a href="" class="logo">Logo</a>
                 
                 <li><a href="">Categorias</a>
@@ -40,7 +44,10 @@
                     <a href="">Centros Cercanos</a>
                 </li>
 
-                <a href="Login.html" class="sesion">Login</a>
+                
+                <a id="btn-abrir-popup" class="btn-abrir-popup">Iniciar Sesión</a>
+
+                
 
             </ul>
 
@@ -162,38 +169,55 @@
     
     </footer>
 
+
+    <!---------------------------------------------------------------------------------------------------->
+    <!------------------------------------            POP UP          ------------------------------------>
+    <!---------------------------------------------------------------------------------------------------->
+
+    <div class="contenedor">
+        <div class="overlay" id="overlay">
+
+            <div class="filter-pink"></div>
+        
+            <img class="background-image" src="img/imagens.png" alt="">
+        
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h2>Iniciar Sesión</h2>
+                <form action="">
+                            <!-----     Inputs       ----->
+                    <div class="contenedor-inputs">
+
+                        <label class="input-title">Email</label>
+                        <input type="email" name="email" required>
+
+                        <label class="input-title">Nro de identificación</label>
+                        <input type="text" name="text" required>
+                        
+                        <label class="input-title">Contraseña</label>
+                        <input type="password" name="password" required>
+                    </div>
+                    
+                    
+                        <!-----     Links       ----->
+                    <div id="link">
+                        <a class="link-rememberdats" href="">Recordar mis datos</a>
+                        <a class="link-password" href="">Olvidé mi contraseña</a>
+                    </div>
+                        
+                        <!-----     Botones       ----->
+                    <input type="submit" class="btn-submit" value="Iniciar sesión ">
+
+                    <p class="not-count">¿No tienes cuenta?</p>
+                    <input type="submit" class="btn-submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="js/animation.js"></script>
+
 </body>
-
-
-<!--
-    Index
-        header
-            - logo
-            - menu
-                - Categorias
-                    - Social
-                    - Salud
-                    - Ambiental
-                    - Bienes
-                    - Recientes
-                - Donaciones
-                - Peticiones
-                - Centros Cercanos
-            - log in/ sign up
-                - formulario log in
-                - formulario sign up
-        main
-            - banner (carrusel?)
-                - imagen
-                - logo
-                - barra de busqueda
-            - noticias (overflow)
-            - campañas
-        footer
-            - logo
-            - redes sociales
-            - informacion adicional
-            - preguntas frecuentes (FAQ)
--->
 
 </html>
