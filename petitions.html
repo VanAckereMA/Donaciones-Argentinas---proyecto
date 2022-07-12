@@ -4,120 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
    <title>Peticiones</title>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:ital,wght@0,400;1,300&family=Roboto:wght@400;500;700&display=swap');
 
-
-:root {
-
-    /******         Paleta de Colores         ******/
-    --negro: #000000;
-    --azul: #08394E;
-    --celeste: #7EC6D6;
-    --naranja: #FF8E25;
-    --amarilloF: #EEC04B;
-    --amarilloC: #EEE8A9;
-
-    /******         Fuentes          ******/
-
-    /*
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    */
-}
-
-*{
-    margin: 0;
-    padding: 0;
-   /* -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;*/
-    box-sizing: border-box;
-    list-style: none;
-}
-
-#peticiones {
-    background-color:rgb(205, 231, 235) ;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-style: normal;
-}
-
-    #salud{
-        display: none;
-    }
-   #bienes{
-        display: none;
-    }
-    #ambiental{
-        display:none
-    }
-     #sangre{
-        display:none;
-    }
-    #medicacion{
-        display:none;
-    }
-    #ayudaEconomica{
-        display:none;
-    }
-    #sangre:target{
-        display: block;
-    }
-    #medicacion:target{
-        display: block;
-    }
-    #ayudaEconomica:target{
-        display: block;
-    }
-
-    form {
-        width: 80%;
-        height: 80%;
-        margin: 0 auto;
-        margin-top: 70px;
-        padding: 0;
-
-        background-color: white;
-        border-radius: 20px;
-        -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #forms-petitions{
-        margin-top: 30px;
-        width: 80vw;
-        height: 90%;
-
-        background-size: cover;
-        background-position: center;
-        border-radius: 5px;
-        background-image: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6), url(./img/WhatsApp\ Image\ 2022-05-31\ at\ 8.41.35\ AM.jpeg);
-        -webkit-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
-        box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
-    }
-    
-
-label{
-    display:block;
-}
-
-</style>
 <body>
 
     <main role="main" id="peticiones">
-    <div id="container.petitions" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+    <div id="container.petitions">
         <div id="forms-petitions">
-            <form action="" id="petitions" method="get" autocomplete="off" style="overflow-y:scroll">
+            <form action="" id="petitions" method="get" autocomplete="off">
                 <label><h2>Peticiones</h2></label>
                 <label class="petitions.tittle" for="tittle">Título</label>
                     <input 
@@ -351,8 +247,7 @@ label{
             <label for="mesagge" class="petitions.image"> Ingrese un breve texto de agradecimiento </label>
                 <textarea name="" placeholder="Ingrese un breve mensaje de agradecimiento a sus futuros colaboradores :)"></textarea>
         <div class="petitions.boton">
-            <button style=" all: unset; cursor: pointer; padding: 10px 50px; font-size: 15px; color: white; background-image: linear-gradient(to right, #cf3384, #da437f, #e3537c, #ea6377, #ef7377);margin-top: 15px;">
-            Enviar peticion</button>
+            <button> Enviar peticion</button>
         </div>
 
         </form>

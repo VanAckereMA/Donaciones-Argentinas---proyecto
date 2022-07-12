@@ -433,3 +433,98 @@ footer .social-media a:nth-child(2) > img {
     
     width: 72px;
 }
+
+/* FORULARIO DE PETICIONES */
+
+#peticiones {
+    background-color:rgb(205, 231, 235) ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-style: normal;
+}
+
+/* ACÁ VAN LAS CATEGORÍAS */
+    #salud{
+        display: none;
+    }
+   #bienes{
+        display: none;
+    }
+    #ambiental{
+        display:none
+    }
+
+/* ACÁ VAN LOS TIPOS DE LA CATEGORÍA SANGRE*/
+     #sangre{
+        display:none;
+    }
+    #medicacion{
+        display:none;
+    }
+    #ayudaEconomica{
+        display:none;
+    }
+    #sangre:target{
+        display: block;
+    }
+    #medicacion:target{
+        display: block;
+    }
+    #ayudaEconomica:target{
+        display: block;
+    }
+
+    form {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 0;
+
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+#forms-petitions{
+    margin-top: 30px;
+    width: 80vw;
+    height: 90%;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6), url(../img/WhatsApp\ Image\ 2022-05-31\ at\ 8.41.35\ AM.jpeg);
+    -webkit-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
+    }
+    
+
+label{
+    display:block;
+}
+  
+.petitions.boton{
+    all: unset; 
+    cursor: pointer; 
+    padding: 10px 50px; 
+    font-size: 15px; 
+    color: white; 
+    background-image: linear-gradient(to right, #cf3384, #da437f, #e3537c, #ea6377, #ef7377);
+    margin-top: 15px;
+}
+
+#container.petitions{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center
+}
