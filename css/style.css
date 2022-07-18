@@ -38,14 +38,20 @@ body {
 }
 /* Contenedor del logo*/
 .logo-conteiner {
+    width: 15%;
+    display: flex;
+    padding-left: 10px;
+}
+
+.logo-conteiner div {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* para achicar la imgane del logo*/
 .logo-conteiner a img {
     height: 70px;
-    padding-left: 50px;
 }
 /* Sacar las decoraciones del link del logo */
 .logo-conteiner a {
@@ -53,36 +59,47 @@ body {
     color: var(--amarilloF);
     font-size: 16px;
 }
-.navegador {
-    background: var(--negro);
-    height: 120px; /*alto del navegador*/
-}
 
 /* Espacio entre los elementos en la barra de navegacion*/
+
 .navegador {
+    background: var(--negro);
+    height: 150px; /*alto del navegador*/
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    padding-top: 5px;
 }
 
-.navegador > ul {
+.navegador > .menu {
     width: 70%; /* Le puse un ancho a las listas para que ocupen el 70%*/
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
-}
-/* boton de sign-up*/
-.navegador li:nth-child(5) {
-    position: absolute;
-    top: 0px; right: 0px;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
+#login-logout{
+    width: 15%;  
+    gap: 5px;
+    padding-right: 10px;
+    text-align: center;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+#login-logout a{
+    width: 40%;
+    font-size: .5em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .menu > li {
    position: relative;
    display: inline-block;
 }
-
 
 .menu > li > a {
     display: block;
@@ -90,20 +107,18 @@ body {
     color: var(--amarilloF);
 }
 
-
 .menu li a:hover {
     color: var(--celeste);
     transition: all .15s;
 }
 
 
-h2 {
-    text-align: center;
-}
+
 
 
 /******         Logo y Login         ******/
-.logo, .sesion{
+.logo, 
+.sesion{
     color: var(--celeste);
 }
 
@@ -547,6 +562,7 @@ footer .social-media a:nth-child(2) > img {
 .form-container h2 {
     width: 80%;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .donations-title,
@@ -647,4 +663,59 @@ form section {
 form section label {
     display: flex;
     justify-content: space-evenly;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*Bienes*/
+
+.title-container {
+    width: 50%;
+    margin: 60px auto 20px;    
+}
+
+.grid-layout{
+	width: 50%;
+	margin: 0 auto; /*centrar caja*/
+
+	display: grid;
+	grid-template-columns: 31% 31% 31%;
+	justify-content: space-between;
+}
+
+.grid-layout>article {
+	background-color: white;
+	height: 330px;
+	margin: 10px 0;
+	
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-layout img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.grid-layout>article article{
+    height: 50%;
+    padding: 15px;
+    font-size: 0.5em;
+}
+
+.grid-layout h3 {
+    color: #02a95c;
+    font-size: .875rem;
+}
+
+.grid-layout h4 {
+    margin-top: 7px;
+}
+
+.grid-layout p {
+    margin: 10px 0;
 }
