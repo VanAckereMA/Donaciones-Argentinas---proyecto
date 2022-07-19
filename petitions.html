@@ -9,27 +9,48 @@
 </head>
 
 <body>
+    <header> <!--Seccion del Header (Logo - Barra de menu - Boton para registrarse e iniciar sesion)-->
+
+        <section class="logo"></section>
+
+        <nav class="navegador">
+            <ul class="menu">
+                <li><a href="">Categorias</a>
+                    <ul class="submenu">
+                        <li><a href="">Bienes</a></li>
+                        <li><a href="">Salud</a></li>
+                        <li><a href="">Social</a></li>
+                        <li><a href="">Ambiental</a></li>
+                    </ul>
+                </li>
+                <li>
+                    
+                    <a href="">Donaciones</a>
+                </li>
+                <li>
+                    <a href="">Peticiones</a></li>
+                <li><a href="">Centros Cercanos</a></li>
+            </ul>
+        </nav>
+
+        <section class="sign-up"></section>
+        
+    </header>
 
     <main role="main" id="peticiones">
-    <div id="container.petitions">
+    <div id="container-petitions">
         <div id="forms-petitions">
             <form action="" id="petitions" method="get" autocomplete="off">
                 <label><h2>Peticiones</h2></label>
-                <label class="petitions.tittle" for="tittle">Título</label>
+                <label class="petitions-tittle" for="tittle">Título</label>
                     <input 
                         type="text"
                         value=""
                         id="tittle">
-                <label class="petitions.description" for="description">
-                    DESCRIPCIÓN * <br>
-                </label>
-                    <textarea 
-                        id="description" 
-                        maxlength="250" 
-                        placeholder="Conta los detalles de tu petición, describí que necesitas">
-                    </textarea>
+                <label class="petitions-description" for="description"> Descripción</label>
+                   <input type="text" id="description" placeholder="Describe tu necesidad" required>
                     <br>
-                <label class="petitions.category">
+                <label class="petitions-category">
                     <select id="select"> 
                         <option value="">Selecciones una categoria</option>
                         <option value="salud">Salud</option>
@@ -237,16 +258,16 @@
                 </span>
             <!--ACA TERMINAN LAS CATEGORIAS-->
        
-            <label for="image" class="petitions.attach">Adjuntar imagen</label>
+            <label for="image" class="petitions-attach">Adjuntar imagen</label>
                 <input 
                     id="image" 
                     type="file" 
                     value="" 
                     required>
         
-            <label for="mesagge" class="petitions.image"> Ingrese un breve texto de agradecimiento </label>
+            <label for="mesagge" class="petitions-image"> Ingrese un breve texto de agradecimiento </label>
                 <textarea name="" placeholder="Ingrese un breve mensaje de agradecimiento a sus futuros colaboradores :)"></textarea>
-        <div class="petitions.boton">
+        <div class="petitions-boton">
             <button> Enviar peticion</button>
         </div>
 
@@ -255,7 +276,19 @@
     </div>  
 
     </div>
-</main>
+</main> 
+<footer>
+
+    <section class="logo"></section>
+
+    <div class="social-media"></div>
+    
+    <div class="info"></div>
+    
+    <div class="faq"></div>
+
+</footer>
+
 <script>
 
     const salud= document.getElementById('salud');
@@ -296,6 +329,9 @@
                 ambiental.style.display="none" ;
                 bienes.style.display="none"; 
                 salud.style.display="none";
+                sangree.style.display='none';
+                economicaa.style.display="none";
+                medication.style.display="none";
             }
         }
     )
