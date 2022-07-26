@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:ital,wght@0,400;1,300&family=Roboto:wght@400;500;700&display=swap');
 
-
 :root {
 
     /******         Paleta de Colores         ******/
@@ -10,6 +9,13 @@
     --naranja: #FF8E25;
     --amarilloF: #EEC04B;
     --amarilloC: #EEE8A9;
+    --blanco: #efe9cc;
+    --azulTrans: #08394e9f;
+    --celesteFran: #5E7DE3;
+    --naranjaGrad: linear-gradient(to left, #eec04bad, #f2b63eab, #f6a833b7, #fb9d2baf, #ff8e25a9);
+    --mandarinaSoft: linear-gradient(to right, #eec04b, #f2b63ec0, #f6a83370, #fb9d2b41, #ff8e252d);
+    --mandarina: linear-gradient(to right, #eec04b, #f2b63e, #f6a833, #fb9d2b, #ff8e25);
+    --black: black;
 
 
     /******         Fuentes          ******/
@@ -17,7 +23,6 @@
     --font_popi: 'Poppins', sans-serif;
     --font_robo: 'Roboto', sans-serif;
 }
-
 
 *{
     margin: 0;
@@ -27,20 +32,20 @@
     text-decoration: none;
 }
 
-
 body {
-    background-color:rgb(205, 231, 235) ;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-style: normal;
     
-
+    background-color: #eeece1;
 }
 /* Contenedor del logo*/
+
 .logo-conteiner {
     width: 15%;
+
     display: flex;
-    padding-left: 10px;
+    justify-content: center;
 }
 
 .logo-conteiner div {
@@ -49,66 +54,62 @@ body {
     align-items: center;
 }
 
-/* para achicar la imgane del logo*/
 .logo-conteiner a img {
-    height: 70px;
+    height: 70px; /* para achicar la imgane del logo*/
+    opacity: 0.8;
+    transition: 0.6s;
 }
+
+.logo-conteiner a img:hover {
+    opacity: 1;
+    transition: 0.6s;
+}
+
 /* Sacar las decoraciones del link del logo */
 .logo-conteiner a {
     text-decoration: none;
-    color: var(--amarilloF);
-    font-size: 16px;
+    font-size: 18px;
+    color: var(--amarilloC);
 }
 
 /* Espacio entre los elementos en la barra de navegacion*/
 
 .navegador {
-    background: var(--negro);
     height: 150px; /*alto del navegador*/
+    padding-top: 5px; 
+    background-color: var(--black);
+    border-bottom: solid 2px var(--amarilloC);
+    box-shadow: 10px 6px 17px -1px var(--amarilloC);
+    
     display: flex;
-    padding-top: 5px;
 }
 
 .navegador > .menu {
     width: 70%; /* Le puse un ancho a las listas para que ocupen el 70%*/
     list-style: none;
+
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 }
 
-#login-logout{
-    width: 15%;  
-    gap: 5px;
-    padding-right: 10px;
-    text-align: center;
-    
-    display: flex;
-    justify-content: flex-end;
-}
-
-#login-logout a{
-    width: 40%;
-    font-size: .5em;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .menu > li {
    position: relative;
-   display: inline-block;
+   
 }
 
-.menu > li > a {
-    display: block;
+.menu > li > a {  
     padding: 15px 20px;
-    color: var(--amarilloF);
+    color: var(--amarilloC);
+    font-weight: bold;
+    font-style: var(--font_popi);
+    font-size: 1.3em;
 }
 
+
+.logo-conteiner a:hover,
 .menu li a:hover {
-    color: var(--celeste);
+    color: var(--amarilloF);
     transition: all .15s;
 }
 
@@ -117,16 +118,31 @@ body {
 
 
 /******         Logo y Login         ******/
-.logo, 
-.sesion{
-    color: var(--celeste);
+
+#login-logout{
+    width: 15%;  
+    gap: 5px;
+    padding-right: 20px;
+    
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+#login-logout a{
+    width: 50%;
+    font-size: .6em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /******         Submenu         ******/
 .submenu {
     position: absolute;
-    background: var(--negro);
+    background: black;
     width: 100%;
     visibility: hidden;
     opacity: 0;
@@ -138,7 +154,7 @@ body {
 .submenu li a {
     display: block;
     padding: 15px;
-    color: var(--naranja);
+    color: var(--amarilloC);
 }
 
 
@@ -151,28 +167,21 @@ body {
 /******         banner         ******/
 .banner {
     width: 100%;
-    height: 900px;
-    background-image: url(https://images.unsplash.com/photo-1526168637801-e9f490d6bc04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80);
+    height: 100vh;
+    background-image: url(../img/banner_1.jpg);
     background-size: cover;
     margin-top: 0px;
+
+    
 }
-
-
-.image {
-    width: 100vh;
-    height: 900vh;
-}
-
 
 /******         Posicion de Buscador         ******/
 .search {
-    height: 100%;
+    height: 80%;
     max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    transition: all 1s;
 }
 
 
@@ -180,79 +189,83 @@ body {
     width: 900px;
     height: 100px;
     border-radius: 100px;
-    border-bottom: 2px solid var(--negro);
+    border: none;
     opacity:0.4;
     font-size: 50px;
     padding: 0px 0px 0px 50px;
+    transition: .6s;
+    outline: none;
+    
+}
+
+.search input:focus,
+.search input:hover {
+    opacity: .6;
+    transition: .6s;
 }
 
 
 /******         Lupa         ******/
+
 .search button {
     height: 100px;
     width: 100px;;
     border-radius: 50%;
     font-size: 50px;
-    background-color: var(--amarilloF);
+    background-color: var(--celesteFran);
+    color: white;
+    transition: .6s;
 }
 
 .search button:hover {
-    background-color: var(--celeste);
+    background-image: var(--mandarina);
     cursor: pointer;
+    color: var(--azul);
 }
-
 
 /******         Transicion con JavaScript         ******/
 /******         Arriba / Abajo / Izquierda / Derecha         ******/
 .transform_arriba{transform: translateY(20%)}
-.transform_abajo{transform: translateY(20%)}
+.transform_abajo{transform: translateY(40%)}
 .transform_derecha{transform: translateX(20%)}
-.transform_izquierda{transform: translateX(-79.2%)}
+.transform_izquierda{transform: translateX(-71%)}
 
 
 /******         Efectos         ******/
-.fondoCambiaColor {
+.deslizar {
     transform: none;
 }
 
+
 /******         Campañas         ******/
 
-.campaigns {
-    margin-top: 90px;
-    
+.campaigns { 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-.campaigns .title {
-
-    margin-bottom: 90px;
-    width: 600px;
-    padding: 10px 0;
-    border-radius: 90px;
-    background-color: var(--negro);
-    color: var(--amarilloF);
-
+.campaigns .campaign-container { 
+    margin: 80px 0;
+    width: 95%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.campaigns .campaign-container {
-    
-    margin-bottom: 80px;
-    width: 95%;
-   
-    display: flex;
-    justify-content: space-evenly; 
+.campaigns a {
+    background-color: var(--black);
+    border-radius: 14px;
+    height: 310px;
 }
 
 .campaigns a img {
     
-    width: 220px;
-    height: 270px;
-    border-radius: 24px;
+    opacity: 0.6;
+    width: 250px;
+    height: 100%;
+
+    border-radius: 14px;
+    transition: 1s;
 
     box-shadow: 2px 13px 24px 3px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px 13px 24px 3px rgba(0,0,0,0.75);
@@ -260,7 +273,7 @@ body {
 }
 
 .campaigns a:hover img {
-    outline: solid 5px var(--azul);
+    opacity: 1;
 }
 
 
@@ -271,27 +284,26 @@ body {
 }
 
 
-.news .title {
-    margin: 0px 0px 70px;
+.title {
+    margin-top: 200px;
+    margin-bottom: 100px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 6px rgb(29, 29, 26);
-    border-top: 1px solid white;
+    font-size: 2em;
+    color: var(--azul);
+    text-shadow: 2px 2px 6px var(--azul);
+    
 }
 
 
 .title h2 {
     text-align: center;
-    margin-top: 50px;
+    
 }
-
 
 div .news-list {
     max-width: 80vh;
     height: 650px;
 }
-
 
 .news-list {
     margin: 0 auto;
@@ -306,7 +318,6 @@ div .news-list {
     border-radius: 1.5%;
     box-shadow:-5px 4px 5px slategray;
 }
-    
 
 .news-list h2 {
     margin-top: 30px;
@@ -329,6 +340,7 @@ div .news-list {
 }
 
 
+/*Que haces con esto?*/
 .news-list a {
     text-decoration: none;
 }
@@ -378,11 +390,10 @@ div .news-list {
 /*FOOTER*/
 
 #footer {
-
-    margin-top: 70px;
-    background-color: var(--azul);
-    color: wheat;
-    height: 400px;
+    margin-top: 200px;
+    background-color: var(--black);
+    color: var(--amarilloC);
+    height: 500px;
 
     display: flex;
     flex-direction: column;
@@ -395,12 +406,10 @@ footer .logo {
 }
 
 footer .logo > img {
-    
     width: 200px;
 }
 
 footer .container {
-
     padding: 0 10px;
     height: 200px;
 
@@ -412,37 +421,38 @@ footer .container {
 
 
 footer .social-media { 
-
    display: flex;
    align-items: flex-end;
 }
 
 footer .social-media a {
-    
     display: flex;
-    align-items: flex-end;
-    padding: 0; 
 }
 
 footer .social-media a > img {
-    
-    width: 65px;
-
-    
+    width: 65px; 
 }
 
-footer .social-media a:nth-child(2) > img {
-    
+footer .social-media a:nth-child(2) img { 
     width: 72px;
 }
 
+#footer section:nth-child(3) {
+    color: var(--black);
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px 0;
+    background-color: var(--amarilloC);
+    opacity: 0.8;
+}
 
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------*/
 
 /*CATEGORIES*/
 
-#category-title {
+.title {
     margin: 70px 0 45px;
     text-align: center;
 }
@@ -455,10 +465,10 @@ footer .social-media a:nth-child(2) > img {
     flex-wrap: wrap;
 }
 
-.category-container section {
+.category-container>section {
     width: 55%;
     height: 200px;
-    margin: 20px 0;
+    margin: 35px 0;
     border-radius: 15px;
 }
 
@@ -467,7 +477,6 @@ footer .social-media a:nth-child(2) > img {
     height: 200px;
     padding: 100px;
     text-decoration: none;
-    color: black;
     
     display: flex;
     justify-content: flex-start;
@@ -475,13 +484,26 @@ footer .social-media a:nth-child(2) > img {
 }
 
 .category-container section a h2 {
-    /*min-width: 30%;
-    padding: 20px;
-    
-    border-radius: 24px;
-
-    background-color: white; */
     color: white;
+    transition: 1s;
+}
+
+#goods {
+    background-image: url(../img/bienes_1.jpg); 
+}
+
+#health {
+    background-image: url(/img/salud_1.jpg);
+    background-position-y: -60px;
+}
+
+#social {
+    background-image: url(/img/social_1.jpg);
+
+}
+
+#environmental {
+    background-image: url(/img/ambiental_2.jpg);
 }
 
 #goods,
@@ -489,32 +511,29 @@ footer .social-media a:nth-child(2) > img {
 #social,
 #environmental { 
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover;    
 }
 
-#goods {
-    background-image: linear-gradient(to right, #cf3384be, #da437f80, #e3537c62, #ea63773d, #ef737715), url(/img/bienes_1.jpg);
-    
+#goods-color,
+#health-color,
+#social-color,
+#enviromental-color {
+    background: var(--mandarinaSoft);
+    border-radius: 15px;
+    transition: 1s;
 }
 
-#health {
-    background-image: linear-gradient(to right, #cf3384be, #da437f80, #e3537c62, #ea63773d, #ef737715), url(/img/salud_1.jpg);
-    background-position-y: -60px;
-}
-
-#social {
-    background-image: linear-gradient(to right, #cf3384be, #da437f80, #e3537c62, #ea63773d, #ef737715), url(/img/social_1.jpg);
-
-}
-
-#environmental {
-    background-image: linear-gradient(to right, #cf3384be, #da437f80, #e3537c62, #ea63773d, #ef737715), url(/img/ambiental_2.jpg);
+#goods-color:hover,
+#health-color:hover,
+#social-color:hover,
+#enviromental-color:hover {
+    background-color: #ff8e25ea;
 }
 
 
-
-
+.category-container section:hover h2 {
+    color: var(--azul);
+}
 
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -533,7 +552,7 @@ footer .social-media a:nth-child(2) > img {
     background-size: cover;
     background-position: center;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6), url(../img/kids_smiling.png);
+    background-image: var(--naranjaGrad), url(../img/kids_smiling.png);
     -webkit-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
@@ -597,7 +616,7 @@ form section label {
 .donations-title input:focus {
     outline: none;
 
-    border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
+    border-image-source: var(--naranjaGrad);
     border-width: 2px;
     border-image-slice: 1;
 }
@@ -612,7 +631,7 @@ form section label {
 .donations-description textarea:focus {
     outline: none;
     
-    border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
+    border-image-source: var(--naranjaGrad);
     border-width: 2px;
     border-image-slice: 1;
 }
@@ -631,7 +650,7 @@ form section label {
 .donations-category select:focus {
     outline: none;
 
-    border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
+    border-image-source: var(--naranjaGrad);
     border-width: 2px;
     border-image-slice: 1;
 }
@@ -650,7 +669,7 @@ form section label {
     padding: 10px 50px;
     font-size: 17px;
     color: white;
-    background-image: linear-gradient(to right, #cf3384, #da437f, #e3537c, #ea6377, #ef7377);
+    background-image: var(--naranjaGrad);
 }
 
 form section {
@@ -680,7 +699,7 @@ form section label {
 	margin: 0 auto; /*centrar caja*/
 
 	display: grid;
-	grid-template-columns: 31% 31% 31%;
+	grid-template-columns: 100%;
 	justify-content: space-between;
 }
 

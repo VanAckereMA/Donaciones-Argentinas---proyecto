@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donaciones Argentinas | DonArg</title>
 
-    <link rel="shortcut icon" href="img/png-transparent-logo-community-text-logo-television-show.png">
+    <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilo-login.css">
     
@@ -17,58 +17,60 @@
 <body>
     
     <header> <!--Seccion del Header (Logo - Barra de menu - Boton para registrarse e iniciar sesion)-->     
-        <nav class="navegador">
-            
-            <div class="logo-conteiner">
-                <div>
-                    <a href="#"><img src="img/logo.png" alt="Logo"></a>
-                    <a href="#">Donaciones Argentinas</a>
-                </div>
-                
-            </div>
-
-            <ul class="menu">
-                <li><a href="categories.html">Categorias</a>
-                    <ul class="submenu">
-                        <li><a href="bienes.html">Bienes</a></li>
-                        <li><a href="">Salud</a></li>
-                        <li><a href="">Social</a></li>
-                        <li><a href="">Ambiental</a></li>
-                    </ul>
-                </li>
-                
-                <li>
-                    <a href="donations.html">Donaciones</a>
-                </li>
-                
-                <li>
-                    <a href="petitions.html">Peticiones</a>
-                </li>
-                <li>
-                    <a href="">Centros Cercanos</a>
-                </li>
-            </ul>
-
-            <div id="login-logout">
-                <a id="btn-abrir-popup" class="btn-abrir-popup"><span>Iniciar Sesión</span></a>
-                <a id="btn-abrir-popup" class="btn-abrir-popup"><span>Registrarse</span></a>
-            </div>
-        </nav>
-        
-    </header>
-
-    <main role="main"> <!--Main dividido en 3 secciones (banner - newa - campaigns)-->
         
         <section class="banner">
-                  
+            
+            <nav class="navegador" style="background-color: rgba(0, 0, 0, 0.3)">
+                
+                <div class="logo-conteiner">
+                    <div>
+                        <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                        <a href="#">Donaciones Argentinas</a>
+                    </div>
+                    
+                </div>
+
+                <ul class="menu">
+                    <li><a href="categories.html">Categorias</a>
+                        <ul class="submenu" style="background-color: rgba(0, 0, 0, 0.3)">
+                            <li><a href="bienes.html">Bienes</a></li>
+                            <li><a href="">Salud</a></li>
+                            <li><a href="">Social</a></li>
+                            <li><a href="">Ambiental</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="donations.html">Donaciones</a>
+                    </li>
+                    
+                    <li>
+                        <a href="petitions.html">Peticiones</a>
+                    </li>
+                    <li>
+                        <a href="">Centros Cercanos</a>
+                    </li>
+                </ul>
+
+                <div id="login-logout">
+                    <a id="btn-abrir-popup" class="btn-abrir-popup"><span>Iniciar Sesión</span></a>
+                    <a id="btn-abrir-popup" class="btn-abrir-popup"><span>Registrarse</span></a>
+                </div>
+            </nav>
+
             <div class="search desplazamiento">
                 <div>
                     <input type="text" placeholder="Escribe aquí...">
-                        <button><i class="fa-solid fa-magnifying-glass "></i></button>
+                    <button><i class="fa-solid fa-magnifying-glass "></i></button>
                 </div>
             </div>  
 
         </section>
+    </header>
+
+    <main role="main"> <!--Main dividido en 3 secciones (banner - newa - campaigns)-->
+        
+        
 
         <section class="news">
 
@@ -188,6 +190,9 @@
                 </a>
             </div>
         </section>
+        <section>
+            <h3>2022 | Donaciones Argentinas</h3>
+        </section>
     </footer>
 
 
@@ -238,7 +243,7 @@
 
    
     <script src="js/animation.js"></script>
-
+    </script>
 </body>
 
 </html>
