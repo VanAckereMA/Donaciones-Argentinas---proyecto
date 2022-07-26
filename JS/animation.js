@@ -8,6 +8,7 @@ window.addEventListener("scroll", function(){
 
     var lupa = document.querySelectorAll(".desplazamiento");
 
+    
 
     /******         Bucle para generalizar         ******/
     for (var i = 0; i < lupa.length; i++){
@@ -18,7 +19,7 @@ window.addEventListener("scroll", function(){
         /******    Pantalla al 50% ----> 1314    ******/
         /******    Pantalla al 100% ----> 657    ******/
 
-
+        console.log(lupa.length)
         /******         Distancia de pantalla         ******/
         var distancia = lupa[i].getBoundingClientRect().top;
 
@@ -36,10 +37,12 @@ window.addEventListener("scroll", function(){
         /******         Agragar/quitar efectos         ******/
         if (distancia >= -180) {
             /* -230 quiero*/
-            lupa[i].classList.add("fondoCambiaColor"); 
+            lupa[i].classList.add("deslizar");
         } else {
-            lupa[i].classList.remove("fondoCambiaColor");
+            lupa[i].classList.remove("deslizar");
+
         }
+
 
     }
 

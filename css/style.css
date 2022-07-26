@@ -12,7 +12,7 @@
     --blanco: #efe9cc;
     --azulTrans: #08394e9f;
     --celesteFran: #5E7DE3;
-    --naranjaGrad: linear-gradient(to right, #eec04bad, #f2b63eab, #f6a833b7, #fb9d2baf, #ff8e25a9);
+    --naranjaGrad: linear-gradient(to left, #eec04bad, #f2b63eab, #f6a833b7, #fb9d2baf, #ff8e25a9);
     --mandarinaSoft: linear-gradient(to right, #eec04b, #f2b63ec0, #f6a83370, #fb9d2b41, #ff8e252d);
     --mandarina: linear-gradient(to right, #eec04b, #f2b63e, #f6a833, #fb9d2b, #ff8e25);
     --black: black;
@@ -249,14 +249,23 @@ body {
     margin: 80px 0;
     width: 95%;
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+}
+
+.campaigns a {
+    background-color: var(--black);
+    border-radius: 14px;
+    height: 310px;
 }
 
 .campaigns a img {
     
-    width: 220px;
-    height: 270px;
-    border-radius: 24px;
+    opacity: 0.6;
+    width: 250px;
+    height: 100%;
+
+    border-radius: 14px;
+    transition: 1s;
 
     box-shadow: 2px 13px 24px 3px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px 13px 24px 3px rgba(0,0,0,0.75);
@@ -264,7 +273,7 @@ body {
 }
 
 .campaigns a:hover img {
-    outline: solid 5px var(--azul);
+    opacity: 1;
 }
 
 
@@ -381,11 +390,10 @@ div .news-list {
 /*FOOTER*/
 
 #footer {
-
     margin-top: 200px;
-    background-color: black;
+    background-color: var(--black);
     color: var(--amarilloC);
-    height: 400px;
+    height: 500px;
 
     display: flex;
     flex-direction: column;
@@ -398,12 +406,10 @@ footer .logo {
 }
 
 footer .logo > img {
-    
     width: 200px;
 }
 
 footer .container {
-
     padding: 0 10px;
     height: 200px;
 
@@ -415,30 +421,31 @@ footer .container {
 
 
 footer .social-media { 
-
    display: flex;
    align-items: flex-end;
 }
 
 footer .social-media a {
-    
     display: flex;
-    align-items: flex-end;
-    padding: 0; 
 }
 
 footer .social-media a > img {
-    
-    width: 65px;
-
-    
+    width: 65px; 
 }
 
-footer .social-media a:nth-child(2) > img {
-    
+footer .social-media a:nth-child(2) img { 
     width: 72px;
 }
 
+#footer section:nth-child(3) {
+    color: var(--black);
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px 0;
+    background-color: var(--amarilloC);
+    opacity: 0.8;
+}
 
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------*/
@@ -545,7 +552,7 @@ footer .social-media a:nth-child(2) > img {
     background-size: cover;
     background-position: center;
     border-radius: 5px;
-    background-image: linear-gradient(to left, #eec04ba5, #f2b63eab, #f6a933, #fb9d2bb6, #ff8e25a9), url(../img/kids_smiling.png);
+    background-image: var(--naranjaGrad), url(../img/kids_smiling.png);
     -webkit-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.75);
@@ -609,7 +616,7 @@ form section label {
 .donations-title input:focus {
     outline: none;
 
-    border-image-source: linear-gradient(to left, #eec04ba5, #f2b63eab, #f6a933, #fb9d2bb6, #ff8e25a9);
+    border-image-source: var(--naranjaGrad);
     border-width: 2px;
     border-image-slice: 1;
 }
@@ -624,7 +631,7 @@ form section label {
 .donations-description textarea:focus {
     outline: none;
     
-    border-image-source: linear-gradient(to left, #eec04ba5, #f2b63eab, #f6a933, #fb9d2bb6, #ff8e25a9);
+    border-image-source: var(--naranjaGrad);
     border-width: 2px;
     border-image-slice: 1;
 }
@@ -643,7 +650,7 @@ form section label {
 .donations-category select:focus {
     outline: none;
 
-    border-image-source: linear-gradient(to right, #cf3384be, #da437fb9, #e3537cbd, #ea6377be, #ef7377b6);
+    border-image-source: var(--naranjaGrad);
     border-width: 2px;
     border-image-slice: 1;
 }
@@ -662,7 +669,7 @@ form section label {
     padding: 10px 50px;
     font-size: 17px;
     color: white;
-    background-image: linear-gradient(to right, #cf3384, #da437f, #e3537c, #ea6377, #ef7377);
+    background-image: var(--naranjaGrad);
 }
 
 form section {
@@ -710,7 +717,7 @@ form section label {
     width: 100%;
     height: 50%;
     border-top-left-radius: 4px;
-    border-top-right-radius: 4px    ;
+    border-top-right-radius: 4px;
 }
 
 .grid-layout>article article{
