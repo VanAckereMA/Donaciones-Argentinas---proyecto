@@ -17,26 +17,7 @@
     --font_popi: 'Poppins', sans-serif;
     --font_robo: 'Roboto', sans-serif;
 
-	/******         Paleta de Colores         ******/
-    --negro: #000000;
-    --azul: #08394E;
-    --celeste: #7EC6D6;
-    --naranja: #FF8E25;
-    --amarilloF: #EEC04B;
-    --amarilloC: #EEE8A9;
-    --blanco: #efe9cc;
-    --azulTrans: #08394e9f;
-    --celesteFran: #5E7DE3;
-    --naranjaGrad: linear-gradient(to left, #eec04bad, #f2b63eab, #f6a833b7, #fb9d2baf, #ff8e25a9);
-    --mandarinaSoft: linear-gradient(to right, #eec04b, #f2b63ec0, #f6a83370, #fb9d2b41, #ff8e252d);
-    --mandarina: linear-gradient(to right, #eec04b, #f2b63e, #f6a833, #fb9d2b, #ff8e25);
-    --black: black;
 
-
-    /******         Fuentes          ******/
-    --font_mont: 'Montserrat', sans-serif;
-    --font_popi: 'Poppins', sans-serif;
-    --font_robo: 'Roboto', sans-serif;
 }
 
 
