@@ -276,13 +276,13 @@ body {
 	display: flex;
     justify-content: center;
     align-items: center;
-	/*  
+	
     position: fixed;                 
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-    visibility: visible;Comparte con .overlay la misma función*/
+    visibility: hidden;
    
 }
 
@@ -291,7 +291,7 @@ body {
  /*  insertar .filter-pink  para el filtro rosado que esta sobre arriba de la imagen el background del form */
 
 
-.container {
+.container-registro {
     max-width: 700px;
     width: 100%;
     background-color: #fff;
@@ -322,13 +322,13 @@ body {
 }
 }
 */
-.container .title, form .gender-details .gender-title  {
+.container-registro .title, form .gender-details .gender-title  {
     font-size: 25px;
     /* Titulo del registro*/
     margin-bottom: 10px;
 }
 
-.container form .user-details {
+.container-registro form .user-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -390,7 +390,7 @@ body {
     margin: 35px 0 30px 0;
 }
 
-#persona form .button input, .container #client button {
+#persona form .button input, .container-registro #client button {
     height: 100%;
     width: 100%;
     outline: none;
@@ -407,7 +407,7 @@ body {
 }
 
 @media (max-width: 584px) {
-    .container {
+    .container-registro {
         max-width: 100%;
     }
     #persona form .user-details .input-box {
@@ -419,7 +419,7 @@ body {
         width: 100%;
         
     }
-    .container form .user-details {
+    .container-registro form .user-details {
         max-height: 300px;
         overflow-y: scroll;
         
@@ -438,7 +438,7 @@ body {
         height: 90px;
     }
 }
-.container #client button {
+.container-registro #client button {
     width: 100px;
     height: 35px;
     border: none;
@@ -448,7 +448,7 @@ body {
     margin-right: 20px;
     
 }
-.container #client button:hover {
+.container-registro #client button:hover {
     cursor: pointer;
 }
 #persona {
