@@ -5,8 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DonArg | Centros Cercanos</title>
+
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo-login.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+
+    <script src="https://kit.fontawesome.com/683b2a5299.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
+    <header> <!--Seccion del Header (Logo - Barra de menu - Boton para registrarse e iniciar sesion)-->     
+        <nav class="navegador">
+            
+            <div class="logo-conteiner">
+                <div>
+                    <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                    <a href="index.html">Donaciones Argentinas</a>
+                </div>
+                
+            </div>
+
+            <ul class="menu">
+                <li><a href="categories.html">Categorias</a>
+                    <ul class="submenu">
+                        <li><a href="bienes.html">Bienes</a></li>
+                        <li><a href="salud.html">Salud</a></li>
+                        <li><a href="social.html">Social</a></li>
+                        <li><a href="ambiental.html">Ambiental</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="donations.html">Donaciones</a>
+                </li>
+                
+                <li>
+                    <a href="petitions.html">Peticiones</a>
+                </li>
+                <li>
+                    <a href="#">Centros Cercanos</a>
+                </li>
+            </ul>
+
+            <div id="login-logout">
+                <a id="btn-abrir-popup" class="btn-abrir-popup"><span>Iniciar Sesión</span></a>
+                <a id="btn-abrir-popup" class="btn-abrir-popup"><span>Registrarse</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>CENTROS CERCANOS</h2>
+        </div>
+        <section>
+            <select name="select-location" id="select-location">
+                <option value="" selected disabled hidden>Elija una opción</option>
+                <option value="-34.580269561320726, -58.435988141049485">Fundación SÍ</option>
+                <option value="-34.58181882290134, -58.47001012241754">Tzédek</option>
+                <option value="-34.59803072021638, -58.38959230069258">Fundación Tzedeká</option>
+                <option value="-34.64956182635096, -58.4117767110693">Centro de Donaciones Don Orione</opton>
+                <option value="-34.608220141184184, -58.422465516060136">Fundación Hemocentro Buenos Aires</option>
+                <option value="-34.59172234295183, -58.43721357194681">Donar Online</option>
+                <option value="-34.63264999767284, -58.46712813369971">Fundación para Persona SIN TECHO</option>
+                <option value="-34.577649817472526, -58.4266582546153">Fundación Casa Grande</option>
+                <option value="-34.62297732379482, -58.37213784187748">Emaus</option>
+                <option value="-34.62120226509642, -58.39129145202787">Fundación Hemocentro Independencia</option>
+                <option value="-34.58191630894008, -58.45000736037859">Fundación Hematológica Sarmiento</option>
+                <option value="-34.555623271614856, -58.4585409303787">Red Bancos Alimentos</option>
+                <option value="-34.624517245604416, -58.40318125147127">Fundación Swiss Medical</option>
+                <option value="-34.61521728305373, -58.43628891185473">Dale Vida</option>
+                <option value="-34.610411710271364, -58.370622174282886">Caritas Argentina Comisión Nacional</option>
+                <option value="-34.5448895276937, -58.46286035104456">Italo Argentina JUNTOS Y SOLIDARIOS</option>
+                <option value="-34.62954859130564, -58.39671405266159">Casa Garrahan</option>
+                <option value="-34.59674615351857, -58.40236532695071">Cáritas Buenos Aires (Sede Central)</option>
+                <option value="-34.594446220970596, -58.41109944320678">Volintarias del Gutierrez</option>
+                <option value="-34.632117077659395, -58.393865124786835">Banco de Sangre Garrahan</option>
+
+
+            </select>
+        </section>
+        <div id="map">
+        </div>
+    </main>
+
+    <footer id="footer">
+        <section class="container-1">
+            <h3>Nosotros</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sed quidem quaerat animi non tenetur ipsum voluptatum perspiciatis nesciunt nam natus sunt, assumenda voluptatem. Voluptas et quam autem in quod.</p>
+        </section>
+        <section class="container-2">
+            <h3>Categorias</h3>
+            <ul>
+                <li><a href="bienes.html">Bienes</a></li>
+                <li><a href="salud.html">Salud</a></li>
+                <li><a href="social.html">Social</a></li>
+                <li><a href="ambiental.html">Ambiental</a></li>
+            </ul>
+        </section>
+        <section class="container-3">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Contactanos</a></li>
+                <li><a href="">Contribuir</a></li>
+                <li><a href="">Politica de Privacidad</a></li>
+                <li><a href="">SiteMap</a></li>
+            </ul>
+        </section>
+        <section class="container-4">
+            <div>2022 | Donaciones Argentinas</div>
+            <div>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </section>
+    </footer>
+    
+    <!--Map js features-->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
