@@ -284,7 +284,7 @@ body {
     background-color: #fff;
     padding: 25px 30px;
     border-radius: 5px;
-
+    
  /*  insertar 
 
     position: fixed;
@@ -322,7 +322,7 @@ body {
     margin: 20px 0 12px 0;
 }
 
-#persona form .user-details .input-box {
+#persona form .user-details .input-box, #empresa form .user-details .input-box {
     width: calc(100% / 2 - 20px);
     margin-bottom: 15px;
 }
@@ -372,12 +372,12 @@ body {
     display: none;
 }
 
-#persona form .button {
+#persona form .button, #empresa form .button {
     height: 45px;
     margin: 35px 0 30px 0;
 }
 
-#persona form .button input, .container-registro #client button {
+#persona form .button input, #empresa form .button input, .container #client button {
     height: 100%;
     width: 100%;
     outline: none;
@@ -388,7 +388,7 @@ body {
     letter-spacing: 2px;
 
 }
-#persona form .button input:hover {
+#persona form .button input:hover, #empresa form .button input:hover {
     background-image:linear-gradient(-135deg, #71b7e6, #9b59b6);
     cursor: pointer;
 }
@@ -443,4 +443,8 @@ body {
 }
 #empresa {
     display: none;
+}
+
+body #persona form, body #empresa form {
+    font-size: 1rem;
 }
