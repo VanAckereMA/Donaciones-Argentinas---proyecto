@@ -94,6 +94,7 @@ body {
 	visibility: hidden;
 }
 
+.overlay-beta.active,
 .overlay.active {
 	visibility: visible;
 }
@@ -225,8 +226,13 @@ body {
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
+.popup-beta.active,
 .popup.active {	transform: scale(1); opacity: 1; }
+
+
 .popup.active h2 { animation: entradaTitulo .8s ease .5s forwards; }
+
+
 .popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
 
 @keyframes entradaTitulo {

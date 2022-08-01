@@ -74,20 +74,20 @@ btnCerrarPopup.addEventListener('click', function(e){
 /*****************************************************************************************************/
 /*************************************     POP UP   REGISTRO      ************************************/
 /*****************************************************************************************************/
-var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
-	overlay = document.getElementById('overlay'),
-	popup = document.getElementById('popup'),
-	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+var btnAbrirPopupB = document.getElementById('btn-abrir-popup-beta'),
+	overlayB = document.getElementById('overlay-beta'),
+	popupB = document.getElementById('popup-beta'),
+	btnCerrarPopupB = document.getElementById('btn-cerrar-popup-beta');
 
-btnAbrirPopup.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
+btnAbrirPopupB.addEventListener('click', function(){
+	overlayB.classList.add('active');
+	popupB.classList.add('active');
 });
 
-btnCerrarPopup.addEventListener('click', function(e){
+btnCerrarPopupB.addEventListener('click', function(e){
 	e.preventDefault();
-	overlay.classList.remove('active');
-	popup.classList.remove('active');
+	overlayB.classList.remove('active');
+	popupB.classList.remove('active');
 });
 
 /*****************************************************************************************************/
