@@ -51,17 +51,18 @@ body {
 
 
 .carousel .carousel-item a:visited {
-    color: #e47e1f;
+    color: #29253d;
 }
 
 
 .carousel .carousel-item a:hover {
-    color: #ecea77;
+    color: #f38841;
 }
 
 
 .carousel .carousel-item a:active {
-  color: #000000;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px grey;
 }
 
 
@@ -88,10 +89,6 @@ body {
     text-align: center;
 }
 
-#news-list p {
-    font-size: 0.5em;
-}
-
 /* ESTILOS DE MATERIALIZE*/
 .carousel{
     min-height: 500px;
@@ -103,6 +100,7 @@ body {
     justify-content: center;
     align-items: center;
     width:500px;
+    max-height: 500px;
     height: 500px;
 }
 
