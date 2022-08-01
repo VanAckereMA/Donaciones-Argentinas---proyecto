@@ -285,20 +285,15 @@ body {
 }
 
 
-.title {
+.title h2 {
+    text-align: center;
+    font-weight: lighter;
     margin-top: 200px;
     margin-bottom: 100px;
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     color: var(--azul);
     text-shadow: 2px 2px 6px var(--azul);
-    
-}
-
-
-.title h2 {
-    text-align: center;
-    font-weight: lighter;
 }
 
 div .news-list {
@@ -463,8 +458,8 @@ div .news-list {
 
 /*CATEGORIES*/
 
-.title {
-    margin: 70px 0 45px;
+.category h2{
+    margin: 70px;
     text-align: center;
 }
 
