@@ -75,6 +75,7 @@ body {
 	visibility: hidden;
 }
 
+.overlay-beta.active,
 .overlay.active {
 	visibility: visible;
 }
@@ -206,8 +207,13 @@ body {
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
+.popup-beta.active,
 .popup.active {	transform: scale(1); opacity: 1; }
+
+
 .popup.active h2 { animation: entradaTitulo .8s ease .5s forwards; }
+
+
 .popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
 
 @keyframes entradaTitulo {
@@ -247,4 +253,194 @@ body {
 
 .not-count {
     font-size: 1.2rem;
+}
+
+/******************		Estilos de Registro		******************/
+
+.background-conteiner {
+    padding: 10px;
+    background-image: linear-gradient(135deg, #71b7e6, #9b59b6);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+    position: fixed;                 
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    visibility: hidden;
+   
+}
+
+ /*  insertar .overlay.active para activar */
+
+ /*  insertar .filter-pink  para el filtro rosado que esta sobre arriba de la imagen el background del form */
+
+
+.container-registro {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+
+ /*  insertar 
+
+    position: fixed;
+	z-index: 1;
+
+    Lo que hace fijar el formulario dentro del background y que quede centrado
+ */
+}
+
+/*  Insertar cruz para cerrar el formulario
+    .popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+
+        Cambio de Color
+    .popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+}
+*/
+.container-registro .title, form .gender-details .gender-title  {
+    font-size: 25px;
+    /* Titulo del registro*/
+    margin-bottom: 10px;
+}
+
+.container-registro form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+#persona form .user-details .input-box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+#persona form .gender-details .category {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 14px 0;
+}
+.gender-details .category label {
+    display: flex;
+    align-items: center; 
+}
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid  transparent;
+    transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one, #dot-2:checked ~ .category label .two, #dot-3:checked ~ .category label .three {
+    border-color: #d9d9d9;
+    background-color: #9b599b;
+}
+
+#persona form input[type="radio"]{
+    display: none;
+}
+
+#persona form .button {
+    height: 45px;
+    margin: 35px 0 30px 0;
+}
+
+#persona form .button input, .container-registro #client button {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background-image: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+}
+#persona form .button input:hover {
+    background-image:linear-gradient(-135deg, #71b7e6, #9b59b6);
+    cursor: pointer;
+}
+
+@media (max-width: 584px) {
+    .container-registro {
+        max-width: 100%;
+    }
+    #persona form .user-details .input-box {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    #persona form .gender-details .category {
+        width: 100%;
+        
+    }
+    .container-registro form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+        
+    }
+    .user-details::-webkit-scrollbar {
+        width: 13px;
+        background-color: #ccc;
+    }
+    .user-details::-webkit-scrollbar-thumb {
+        background-color:#9b59b6;
+    }
+}
+@media (max-width: 440px) {
+    #persona form .gender-details .category {
+        flex-direction: column;
+        height: 90px;
+    }
+}
+.container-registro #client button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    font-size: 16px;
+    background-image:linear-gradient(-135deg, #71b7e6, #9b59b6);
+    padding: 0 10px;
+    margin-right: 20px;
+    
+}
+.container-registro #client button:hover {
+    cursor: pointer;
+}
+#persona {
+    display: none;
+}
+#empresa {
+    display: none;
 }
