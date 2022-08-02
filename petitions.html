@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-=======
-git sa<!DOCTYPE html>
->>>>>>> carliege
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Peticiones</title>
 
     <link rel="shortcut icon" href="img/logo.png">
@@ -59,6 +54,247 @@ git sa<!DOCTYPE html>
         </nav>
     
     </header>
+    <main role="main" id="peticiones">
+        <div id="container-petitions">
+            <div id="forms-petitions">
+                <form action="" id="petitions" method="get" autocomplete="off">
+                    <label><h2>Peticiones</h2></label>
+                    <label class="petitions-tittle" for="tittle">Título</label>
+                        <input 
+                            type="text"
+                            value=""
+                            id="tittle">
+                    <label class="petitions-description" for="description"> Descripción</label>
+                       <input type="text" id="description" placeholder="Describe tu necesidad" required>
+                        <br>
+                    <label class="petitions-category">
+                        <select id="select"> 
+                            <option value="">Selecciones una categoria</option>
+                            <option value="salud">Salud</option>
+                            <option value="bienes">Bienes</option>
+                            <option value="ambiental">Ambiental</option>
+                        </select>
+                    </label>   
+                
+                <!-- SECCIÓN CATEGORIA SALUD-->
+                
+                    <span id="salud">
+                        <section id="salud1">
+                        
+                            <span>Medicación<input type="radio" name="probando" value="medicacion"></span>
+                            <span>Sangre<input type="radio" name="probando" value="sangre"></span>
+                            <span>Ayuda Económica</span><input type="radio" name="probando" value="economica"></span>
+                        
+                   
+                        </section>
+                    </span>
+                <!--TIPO SANGRE-->
+                    <span id="typeSalud"></span>
+                        <section class="formTypeSalud" id="sangre">
+                            <label for="tipodeSangre"> Tipo de sangre</label>
+                                <input 
+                                    type="text" 
+                                    value="" 
+                                    id="tipodeSangre"
+                                    placeholder="0+, 0-, A+, A-, B+, B-, AB+, AB-">
+                            <label for="hospital">Hospital de recaudación</label>
+                                <input 
+                                    type="text" 
+                                    value="" 
+                                    id="hospital">
+                            <label for="horarios">Horarios de Atención:</label>
+                                <input 
+                                    type="text" 
+                                    value="" 
+                                    id="horarios">
+                            <label for="nombrePaciente">Nombre y apellido del Paciente:</label>
+                                <input 
+                                    type="text" 
+                                    value="" 
+                                    id="nombrePaciente">
+                        </section> 
+    
+                    <!--TIPO MEDICACIÓN-->
+                  
+                  
+                        <section class="formTypeSalud" id="medicacion">
+                            <label for="nombreMedicación"> Nombre del medicamento:
+                                <input 
+                                    type="text" 
+                                    value=""
+                                    id="nombreMedicación">
+                            </label>
+                            <label id="diagnostico">Diagnóstico:</label>
+                                <input 
+                                    type="text"
+                                    value=""
+                                    id="diagnostico">
+                            <label id="receta">Adunte foto de receta/orden medica:</label>
+                                <input 
+                                    type="file"
+                                    value=""
+                                    id="receta">
+                            <label id="nombredelpaciente">Nombre del paciente:</label>
+                                <input 
+                                    type="text"
+                                    value=""
+                                    id="nombredelpaciente">
+                            <label id="zonaderecaudacion">Zona de recaudación:</label>
+                                <input 
+                                    type="text"
+                                    value=""
+                                    id="zonaderecaudacion" >
+                            <label id="hratencion">Horarios de atención:</label>
+                                <input 
+                                    type="text"
+                                    value=""
+                                    id="hratencion">
+                        </section>
+                <!--TIPO AYUDA ECONOMICA-->      
+                        <section class="formTypeSalud" id="ayudaEconomica">
+                            <label for="ndelpaciente">Nombre del paciente:</label>
+                                <input 
+                                    type="text"
+                                    value=""
+                                    id="ndelpaciente">
+                            <label for="diagnostico1">Diagnóstico:</label>
+                                <input 
+                                    type="text" 
+                                    value=""
+                                    id="diagnostico1">
+                            <label for="montoTotal">Monto a juntar:</label>
+                                <input 
+                                    type="number" 
+                                    value=""
+                                    max="100000"
+                                    min="5000"
+                                    id="montoTotal"
+                                    required>
+                            <label for="cbu">CBU:</label>
+                                <input 
+                                    type="number"
+                                    value=""
+                                    placeholder="Ingrese su cbu/cuenta corriente"
+                                    maxlength="22"
+                                    id="cbu">
+                            <label id="orden">Adjuntar orden/receta/diagnostico:</label>
+                                <input 
+                                    type="file"
+                                    value=""
+                                    id="orden">
+                     
+                    </section>
+            
+                </span>
+            <!-- SECCIÓN CATEGORÍA BIENES-->
+                <span id="bienes">
+                <label for="typeBienes" id="bienes1">Complete los datos de la categoria:</label>
+                    <section  id="typeBienes">
+                        <label for="zrecaudacion">zona de recaudación:</label>
+                            <input 
+                                type="text"
+                                id="zrecaudacion"
+                                value=""
+                                required>
+                        <label for="hdeatencion">Horarios de atención</label>
+                            <input 
+                                type="text"
+                                value=""
+                                id="hdeatencion">
+                        <label for="nrepresentante">Nombre del representante/recaudador:</label>
+                            <input 
+                                type="text" 
+                                name="" 
+                                id="nrepresentante">
+                        <label for="cbusi">cbu si:</label>
+                            <input 
+                                type="radio"
+                                name="cbu"
+                                value=""
+                                id="cbusi">
+                        <label for="cbuno">no:</label>
+                            <input 
+                                type="radio"
+                                name="cbu"
+                                value=""
+                                id="cbuno">
+                        
+                        <label for="cbu1">Ingrese CBU:</label>
+                            <input
+                                type="number"
+                                id="cbu1"
+                                value=""
+                                maxlength="22"
+                                required>
+                    </section>  
+                </span>      
+            
+            <!--SECCIÓN CATEGORIA AMBIENTAL-->
+                <span id="ambiental">
+                    <label for="typeAmbiental" id="ambiental1">Complete los datos de la categoría:</label>
+                        <section id="typeAmbiental">
+                            <label for="zdrecaudacion" id="ambiental"> Zona de recaudación:
+                                <input 
+                                    type="text"
+                                    value=""
+                                    id="zdrecaudacion">
+                            </label>
+                            <label for="hrdeatencion">Horarios de atención:
+                                <input 
+                                    type="text"
+                                    value=""
+                                    id="hrdeatencion">
+                            </label>
+                            <label for="nombreRepresentante">Nombre del representante/recolector: 
+                                <input 
+                                    type="text"
+                                    value=""
+                                    id="nombreRepresentante">
+                            </label>
+                            <label for="cbusisi">CBU si: 
+                                <input 
+                                    type="radio"
+                                    name="cbuu"
+                                    id="cbusisi"
+                                    value="">
+                            </label>
+                            <label for="cbunono">no: 
+                                <input
+                                    type="radio"
+                                    name="cbuu"
+                                    id="cbunono"
+                                    value="">
+                            </label>
+                            <label for="redesSociales"> Redes sociales: 
+                                <input
+                                    type="text"
+                                    value=""
+                                    id="redesSociales">
+                            </label>
+                        </section> 
+                    </span>
+                <!--ACA TERMINAN LAS CATEGORIAS-->
+           
+                <label for="image" class="petitions-attach">Adjuntar imagen</label>
+                    <input 
+                        id="image" 
+                        type="file" 
+                        value="" 
+                        required>
+            
+                <label for="mesagge" class="petitions-image"> Ingrese un breve texto de agradecimiento </label>
+                    <textarea name="" placeholder="Ingrese un breve mensaje de agradecimiento a sus futuros colaboradores :)"></textarea>
+            <div class="petitions-boton">
+                <button> Enviar peticion</button>
+            </div>
+    
+            </form>
+            
+        </div>  
+    
+        </div>
+    </main> 
+
     <footer id="footer">
         <section class="container-1">
             <h3>Nosotros</h3>
@@ -92,348 +328,88 @@ git sa<!DOCTYPE html>
             </div>
         </section>
     </footer>
-</body>
-=======
-    <link rel="stylesheet" href="./css/style.css">
-   <title>Peticiones</title>
-</head>
 
-<body>
-  <main role="main" id="peticiones">
-    <div id="container-petitions">
-        <div id="forms-petitions">
-            <form action="" id="petitions" method="get" autocomplete="off">
-                <label><h2>Peticiones</h2></label>
-                <label class="petitions-tittle" for="tittle">Título</label>
-                    <input 
-                        type="text"
-                        value=""
-                        id="tittle">
-                <label class="petitions-description" for="description"> Descripción</label>
-                   <input type="text" id="description" placeholder="Describe tu necesidad" required>
-                    <br>
-                <label class="petitions-category">
-                    <select id="select"> 
-                        <option value="">Selecciones una categoria</option>
-                        <option value="salud">Salud</option>
-                        <option value="bienes">Bienes</option>
-                        <option value="ambiental">Ambiental</option>
-                    </select>
-                </label>   
-            
-            <!-- SECCIÓN CATEGORIA SALUD-->
-            
-                <span id="salud">
-                    <section id="salud1">
-                    
-                        <span>Medicación<input type="radio" name="probando" value="medicacion"></span>
-                        <span>Sangre<input type="radio" name="probando" value="sangre"></span>
-                        <span>Ayuda Económica</span><input type="radio" name="probando" value="economica"></span>
-                    
-               
-                    </section>
-                </span>
-            <!--TIPO SANGRE-->
-                <span id="typeSalud"></span>
-                    <section class="formTypeSalud" id="sangre">
-                        <label for="tipodeSangre"> Tipo de sangre</label>
-                            <input 
-                                type="text" 
-                                value="" 
-                                id="tipodeSangre"
-                                placeholder="0+, 0-, A+, A-, B+, B-, AB+, AB-">
-                        <label for="hospital">Hospital de recaudación</label>
-                            <input 
-                                type="text" 
-                                value="" 
-                                id="hospital">
-                        <label for="horarios">Horarios de Atención:</label>
-                            <input 
-                                type="text" 
-                                value="" 
-                                id="horarios">
-                        <label for="nombrePaciente">Nombre y apellido del Paciente:</label>
-                            <input 
-                                type="text" 
-                                value="" 
-                                id="nombrePaciente">
-                    </section> 
+    <script>
 
-                <!--TIPO MEDICACIÓN-->
-              
-              
-                    <section class="formTypeSalud" id="medicacion">
-                        <label for="nombreMedicación"> Nombre del medicamento:
-                            <input 
-                                type="text" 
-                                value=""
-                                id="nombreMedicación">
-                        </label>
-                        <label id="diagnostico">Diagnóstico:</label>
-                            <input 
-                                type="text"
-                                value=""
-                                id="diagnostico">
-                        <label id="receta">Adunte foto de receta/orden medica:</label>
-                            <input 
-                                type="file"
-                                value=""
-                                id="receta">
-                        <label id="nombredelpaciente">Nombre del paciente:</label>
-                            <input 
-                                type="text"
-                                value=""
-                                id="nombredelpaciente">
-                        <label id="zonaderecaudacion">Zona de recaudación:</label>
-                            <input 
-                                type="text"
-                                value=""
-                                id="zonaderecaudacion" >
-                        <label id="hratencion">Horarios de atención:</label>
-                            <input 
-                                type="text"
-                                value=""
-                                id="hratencion">
-                    </section>
-            <!--TIPO AYUDA ECONOMICA-->      
-                    <section class="formTypeSalud" id="ayudaEconomica">
-                        <label for="ndelpaciente">Nombre del paciente:</label>
-                            <input 
-                                type="text"
-                                value=""
-                                id="ndelpaciente">
-                        <label for="diagnostico1">Diagnóstico:</label>
-                            <input 
-                                type="text" 
-                                value=""
-                                id="diagnostico1">
-                        <label for="montoTotal">Monto a juntar:</label>
-                            <input 
-                                type="number" 
-                                value=""
-                                max="100000"
-                                min="5000"
-                                id="montoTotal"
-                                required>
-                        <label for="cbu">CBU:</label>
-                            <input 
-                                type="number"
-                                value=""
-                                placeholder="Ingrese su cbu/cuenta corriente"
-                                maxlength="22"
-                                id="cbu">
-                        <label id="orden">Adjuntar orden/receta/diagnostico:</label>
-                            <input 
-                                type="file"
-                                value=""
-                                id="orden">
-                 
-                </section>
-        
-            </span>
-        <!-- SECCIÓN CATEGORÍA BIENES-->
-            <span id="bienes">
-            <label for="typeBienes" id="bienes1">Complete los datos de la categoria:</label>
-                <section  id="typeBienes">
-                    <label for="zrecaudacion">zona de recaudación:</label>
-                        <input 
-                            type="text"
-                            id="zrecaudacion"
-                            value=""
-                            required>
-                    <label for="hdeatencion">Horarios de atención</label>
-                        <input 
-                            type="text"
-                            value=""
-                            id="hdeatencion">
-                    <label for="nrepresentante">Nombre del representante/recaudador:</label>
-                        <input 
-                            type="text" 
-                            name="" 
-                            id="nrepresentante">
-                    <label for="cbusi">cbu si:</label>
-                        <input 
-                            type="radio"
-                            name="cbu"
-                            value=""
-                            id="cbusi">
-                    <label for="cbuno">no:</label>
-                        <input 
-                            type="radio"
-                            name="cbu"
-                            value=""
-                            id="cbuno">
-                    
-                    <label for="cbu1">Ingrese CBU:</label>
-                        <input
-                            type="number"
-                            id="cbu1"
-                            value=""
-                            maxlength="22"
-                            required>
-                </section>  
-            </span>      
-        
-        <!--SECCIÓN CATEGORIA AMBIENTAL-->
-            <span id="ambiental">
-                <label for="typeAmbiental" id="ambiental1">Complete los datos de la categoría:</label>
-                    <section id="typeAmbiental">
-                        <label for="zdrecaudacion" id="ambiental"> Zona de recaudación:
-                            <input 
-                                type="text"
-                                value=""
-                                id="zdrecaudacion">
-                        </label>
-                        <label for="hrdeatencion">Horarios de atención:
-                            <input 
-                                type="text"
-                                value=""
-                                id="hrdeatencion">
-                        </label>
-                        <label for="nombreRepresentante">Nombre del representante/recolector: 
-                            <input 
-                                type="text"
-                                value=""
-                                id="nombreRepresentante">
-                        </label>
-                        <label for="cbusisi">CBU si: 
-                            <input 
-                                type="radio"
-                                name="cbuu"
-                                id="cbusisi"
-                                value="">
-                        </label>
-                        <label for="cbunono">no: 
-                            <input
-                                type="radio"
-                                name="cbuu"
-                                id="cbunono"
-                                value="">
-                        </label>
-                        <label for="redesSociales"> Redes sociales: 
-                            <input
-                                type="text"
-                                value=""
-                                id="redesSociales">
-                        </label>
-                    </section> 
-                </span>
-            <!--ACA TERMINAN LAS CATEGORIAS-->
-       
-            <label for="image" class="petitions-attach">Adjuntar imagen</label>
-                <input 
-                    id="image" 
-                    type="file" 
-                    value="" 
-                    required>
-        
-            <label for="mesagge" class="petitions-image"> Ingrese un breve texto de agradecimiento </label>
-                <textarea name="" placeholder="Ingrese un breve mensaje de agradecimiento a sus futuros colaboradores :)"></textarea>
-        <div class="petitions-boton">
-            <button> Enviar peticion</button>
-        </div>
-
-        </form>
-        
-    </div>  
-
-    </div>
-</main> 
-<footer>
-
-    <section class="logo"></section>
-
-    <div class="social-media"></div>
+        const salud= document.getElementById('salud');
+        const bienes= document.getElementById('bienes');
+        const ambiental= document.getElementById('ambiental');
     
-    <div class="info"></div>
-    
-    <div class="faq"></div>
+        
+        const select = document.getElementById('select')
+        select.addEventListener('click', function(evento){
+            //if(evento.target.value !=='select'){
+                switch (evento.target.value){
+                    case  "salud" : 
+                        salud.style.display="block";
+                        ambiental.style.display="none" ;
+                        bienes.style.display="none"; 
+                    break;
 
-</footer>
+                    case "bienes":
+                        bienes.style.display="block";
+                        salud.style.display="none";
+                        ambiental.style.display="none" ;
+                        medication.style.display='none';
+                        sangree.style.display="none"
+                        economicaa.style.display="none";
+                
+                    break;
 
-<script>
-
-    const salud= document.getElementById('salud');
-    const bienes= document.getElementById('bienes');
-    const ambiental= document.getElementById('ambiental');
-   
-    
-    const select = document.getElementById('select')
-     select.addEventListener('click', function(evento){
-        //if(evento.target.value !=='select'){
-            switch (evento.target.value){
-                case  "salud" : 
-                    salud.style.display="block";
-                    ambiental.style.display="none" ;
-                    bienes.style.display="none"; 
-                break;
-
-                case "bienes":
-                    bienes.style.display="block";
-                    salud.style.display="none";
-                    ambiental.style.display="none" ;
-                    medication.style.display='none';
-                    sangree.style.display="none"
-                    economicaa.style.display="none";
-            
-                break;
-
-                case "ambiental":
-                    ambiental.style.display="block" ;
-                    salud.style.display="none";
-                    bienes.style.display="none"; 
-                    medication.style.display='none';
-                    sangree.style.display="none"
-                    economicaa.style.display="none";
-                break;
-                   
-                default:
-                ambiental.style.display="none" ;
-                bienes.style.display="none"; 
-                salud.style.display="none";
-                sangree.style.display='none';
-                economicaa.style.display="none";
-                medication.style.display="none";
-            }
-        }
-    )
-
-    console.log(salud);
-    console.log(bienes);
-    console.log(ambiental);
-   const sangree = document.getElementById('sangre');
-   const medication = document.getElementById('medicacion');
-   const economicaa = document.getElementById('ayudaEconomica');
-    
-    const probandoCosas = document.getElementById('salud1');
-
-        probandoCosas.addEventListener('click', function(event){
-                switch (event.target.value){
-                    case 'medicacion': 
-                        console.log("Toque medicación");
-                        medication.style.display='block';
+                    case "ambiental":
+                        ambiental.style.display="block" ;
+                        salud.style.display="none";
+                        bienes.style.display="none"; 
+                        medication.style.display='none';
                         sangree.style.display="none"
                         economicaa.style.display="none";
                     break;
-                    case 'sangre': 
-                        console.log("toque sangre");
-                        sangree.style.display='block';
-                        economicaa.style.display="none";
-                        medication.style.display="none";
-                    break;
-                    case 'economica':
-                        console.log("toque plata");
-                        economicaa.style.display='block';
-                        sangree.style.display="none";
-                        medication.style.display="none";
-                    break;
+                    
+                    default:
+                    ambiental.style.display="none" ;
+                    bienes.style.display="none"; 
+                    salud.style.display="none";
+                    sangree.style.display='none';
+                    economicaa.style.display="none";
+                    medication.style.display="none";
                 }
             }
         )
 
-</script>
+        console.log(salud);
+        console.log(bienes);
+        console.log(ambiental);
+    const sangree = document.getElementById('sangre');
+    const medication = document.getElementById('medicacion');
+    const economicaa = document.getElementById('ayudaEconomica');
+        
+        const probandoCosas = document.getElementById('salud1');
+
+            probandoCosas.addEventListener('click', function(event){
+                    switch (event.target.value){
+                        case 'medicacion': 
+                            console.log("Toque medicación");
+                            medication.style.display='block';
+                            sangree.style.display="none"
+                            economicaa.style.display="none";
+                        break;
+                        case 'sangre': 
+                            console.log("toque sangre");
+                            sangree.style.display='block';
+                            economicaa.style.display="none";
+                            medication.style.display="none";
+                        break;
+                        case 'economica':
+                            console.log("toque plata");
+                            economicaa.style.display='block';
+                            sangree.style.display="none";
+                            medication.style.display="none";
+                        break;
+                    }
+                }
+            )
+
+    </script>
     
 </body>
-
->>>>>>> carliege
 </html>
