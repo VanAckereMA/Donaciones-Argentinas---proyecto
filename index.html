@@ -22,7 +22,7 @@
         
         <section class="banner">
             
-            <nav class="navegador" style="background-color: rgba(0, 0, 0, 0.3)">
+            <nav class="navegador nav-default" style="background-color: rgba(0, 0, 0, 0.3)">
                 
                 <div class="logo-conteiner">
                     <div>
@@ -32,9 +32,9 @@
                     
                 </div>
 
-                <ul class="menu">
+                <ul class="menu bullet-points browser-default">
                     <li><a href="categories.html">Categorias</a>
-                        <ul class="submenu" style="background-color: rgba(0, 0, 0, 0.3)">
+                        <ul class="submenu bullet-points brose browser-default" style="background-color: rgba(0, 0, 0, 0.3)">
                             <li><a href="bienes.html">Bienes</a></li>
                             <li><a href="salud.html">Salud</a></li>
                             <li><a href="social.html">Social</a></li>
@@ -62,7 +62,7 @@
 
             <div class="search desplazamiento">
                 <div>
-                    <input type="text" placeholder="Escribe aquí...">
+                    <input type="text" placeholder="Escribe aquí..." class="browser-default">
                     <button><i class="fa-solid fa-magnifying-glass "></i></button>
                 </div>
             </div>  
@@ -115,7 +115,7 @@
                             </div>
         
                         
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,9 +243,11 @@
                     <p class="not-count">¿No tienes cuenta?</p>
                     <input type="submit" class="btn-submit" value="Registrarse">
                 </form>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/js/news.js"></script>           
+            </div>
+        </div>
+    </div>
+        
+               
  
     <div class="background-conteiner overlay-beta" id="overlay-beta">
         <div class="container-registro popup-beta" id="popup-beta">
@@ -352,12 +354,11 @@
                         <input type="submit" value="Registrar">
                     </div>
                 </form>
-            </div>
-            
+            </div> 
         </div>
     </div> 
 
-    <script src="js/animation.js"></script>
+    
     <script>
         function persona() {
         document.getElementById('persona').style.display = 'block'
@@ -369,6 +370,8 @@
             document.getElementById('persona').style.display = 'none'
         }
        </script>
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/js/news.js"></script>
+    <script src="js/animation.js"></script>
 </body>
 </html>
