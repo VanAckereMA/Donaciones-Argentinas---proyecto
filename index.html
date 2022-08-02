@@ -55,7 +55,7 @@
 
                 <div id="login-logout">
                     <a id="btn-abrir-popup" class="btn-abrir-popup"><span>Iniciar Sesión</span></a>
-                    <a id="btn-abrir-popup" class="btn-abrir-popup"><span>Registrarse</span></a>
+                    <a id="btn-abrir-popup-beta" class="btn-abrir-popup"><span>Registrarse</span></a>
                 </div>
             </nav>
 
@@ -246,5 +246,128 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/js/news.js"></script>           
  
+    <div class="background-conteiner overlay-beta" id="overlay-beta">
+        <div class="container-registro popup-beta" id="popup-beta">
+            <a href="#" id="btn-cerrar-popup-beta" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <div class="title">Registro</div>
+            <div id="client">
+                <button value="persona" onclick="persona();">Persona</button>
+                <button value="empresa" onclick="empresa()">Empresa</button>
+            </div>
+            <div id="persona">
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Nombre</span>
+                            <input type="text" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Apellido</span>
+                            <input type="text" placeholder="Ingrese su Apellido" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" placeholder="Ingrese su Email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Telefono</span>
+                            <input type="text" placeholder="Ingrese su número" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Tipo de Identificación</span>
+                            <input type="text" placeholder="Ingrese tipo de identificación" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Número de Documento</span>
+                            <input type="text" placeholder="Ingrese su número de documento" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">contraseña</span>
+                            <input type="text" placeholder="Ingrese su contraseña" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirmar Contraseña</span>
+                            <input type="text" placeholder="Confirme su contraseña" required>
+                        </div>
+                    </div>
+                        <div class="gender-details">
+                            <input type="radio" name="gender" id="dot-1">
+                            <input type="radio" name="gender" id="dot-2">
+                            <input type="radio" name="gender" id="dot-3">
+                            <span class="gender-title">Genero</span>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="gender">Femenino</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="gender">Masculino</span>
+                                </label>
+                                <label for="dot-3">
+                                    <span class="dot three"></span>
+                                    <span class="gender">Prefiero no decirlo</span>
+                                </label>
+                            </div>
+                        </div>
+                    <div class="button">
+                        <input type="submit" value="Registrar">
+                    </div>
+                </form>
+            </div>
+            <div id="empresa">
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Nombre de la Organización</span>
+                            <input type="text" placeholder="Ingrese nombre de la Organización" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Pais de origen</span>
+                            <input type="text" placeholder="Ingrese el pais de origen" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" placeholder="Ingrese su Correo Electronico" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Telefono</span>
+                            <input type="text" placeholder="Ingrese su número" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Cuit</span>
+                            <input type="text" placeholder="Ingrese el cuit de su organización" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">contraseña</span>
+                            <input type="text" placeholder="Ingrese su contraseña" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirmar Contraseña</span>
+                            <input type="text" placeholder="Confirme su contraseña" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Registrar">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div> 
+
+    <script src="js/animation.js"></script>
+    <script>
+        function persona() {
+        document.getElementById('persona').style.display = 'block'
+        document.getElementById('empresa').style.display = 'none'
+        }
+        
+        function empresa(){
+            document.getElementById('empresa').style.display = 'block'
+            document.getElementById('persona').style.display = 'none'
+        }
+       </script>
+    </script>
 </body>
 </html>

@@ -52,10 +52,10 @@ window.addEventListener("scroll", function(){
 
 
 /*****************************************************************************************************/
-/*************************************            POP UP          ************************************/
+/*************************************            POP UP   LOGIN  ************************************/
 /*****************************************************************************************************/
 
-var btnAbrirPopup = document.getElementAll('btn-abrir-popup'),
+var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
 	overlay = document.getElementById('overlay'),
 	popup = document.getElementById('popup'),
 	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
@@ -71,6 +71,24 @@ btnCerrarPopup.addEventListener('click', function(e){
 	popup.classList.remove('active');
 });
 
+/*****************************************************************************************************/
+/*************************************     POP UP   REGISTRO      ************************************/
+/*****************************************************************************************************/
+var btnAbrirPopupB = document.getElementById('btn-abrir-popup-beta'),
+	overlayB = document.getElementById('overlay-beta'),
+	popupB = document.getElementById('popup-beta'),
+	btnCerrarPopupB = document.getElementById('btn-cerrar-popup-beta');
+
+btnAbrirPopupB.addEventListener('click', function(){
+	overlayB.classList.add('active');
+	popupB.classList.add('active');
+});
+
+btnCerrarPopupB.addEventListener('click', function(e){
+	e.preventDefault();
+	overlayB.classList.remove('active');
+	popupB.classList.remove('active');
+});
 
 /*****************************************************************************************************/
 /*********************************            PROXIMO CODIGO          ********************************/
