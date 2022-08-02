@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/petitions.css">
    <title>Peticiones</title>
 </head>
 
@@ -24,27 +24,24 @@
                    <input type="text" id="description"  required>
                     <br>
                 
-       
-            <label for="image" class="petitions-attach">Adjuntar imagen</label>
+                 <label for="mesagge" class="petitions-image"> Ingrese un breve texto de agradecimiento </label>
+                <textarea name="" placeholder="Ingrese un breve mensaje de agradecimiento a sus futuros colaboradores :)"></textarea>
+         
+                <label for="image" class="petitions-attach">Adjuntar imagen</label>
                 <input 
                     id="image" 
                     type="file" 
                     value="" 
                     required>
-        
-            <label for="mesagge" class="petitions-image"> Ingrese un breve texto de agradecimiento </label>
-                <textarea name="" placeholder="Ingrese un breve mensaje de agradecimiento a sus futuros colaboradores :)"></textarea>
-         
-   
 
-        <label class="petitions-category"> Categoría
-            <select id="select"> 
-                <option value="">Selecciones una categoria</option>
-                <option value="salud">Salud</option>
-                <option value="bienes">Bienes</option>
-                <option value="ambiental">Ambiental</option>
-            </select>
-        </label>   
+            <label class="petitions-category"> Categoría
+                <select id="select"> 
+                    <option value="">Selecciones una categoria</option>
+                    <option value="salud">Salud</option>
+                    <option value="bienes">Bienes</option>
+                    <option value="ambiental">Ambiental</option>
+             </select>
+            </label>   
     
     <!-- SECCIÓN CATEGORIA SALUD-->
     <section id="categoriaSalud">
@@ -58,7 +55,8 @@
        
             </section>
         </label>
-    <!--TIPO SANGRE-->
+        <div  class="cat">
+        <!--TIPO SANGRE-->
        
             <section class="formTypeSalud" id="sangre">
                 <label for="tipodeSangre"> Tipo de sangre</label>
@@ -244,6 +242,8 @@
             </section> 
         </label>
     <!--ACA TERMINAN LAS CATEGORIAS-->
+</div>
+
     <div class="petitions-boton">
         <button> Enviar peticion</button>
     </div>
